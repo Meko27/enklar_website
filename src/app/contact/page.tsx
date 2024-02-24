@@ -24,7 +24,7 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form action={contact_form_action} method="POST" data-netlify="true">   {/* Use formtree as contact form action for now */}
+              <form method="POST" data-netlify="true">   {/* action={contact_form_action} Use formtree as contact form action for now */}
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
                     Vor- und Nachname <span className="text-red-500">*</span>
