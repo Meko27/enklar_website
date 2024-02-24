@@ -1,12 +1,12 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Next Project"
-  content: "Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time."
+  title: "Ihre Partner bei der energetischen Sanierung"
+  content: "Wir begleiten Sie anhand Ihrer Bedürfnisse und Wünsche von der ersten Beratung über die Planung, Finanzierung und Umsetzung der Sanierung Ihres Hauses."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
+    label: "Jetzt kostenlos anfragen"
     link: "https://github.com/zeon-studio/nextplate"
 
 # Features
@@ -39,6 +39,19 @@ features:
       link: "https://github.com/zeon-studio/nextplate"
 
   - title: "The Top Reasons to Choose Next for Your Next Project"
+    image: "/images/service-3.png"
+    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    bulletpoints:
+      - "Instantly load static sites for better user experience and SEO."
+      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
+      - "Use any front-end library or framework, or build custom components, for any project size."
+      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+    button:
+      enable: false
+      label: ""
+      link: ""
+
+  - title: "Tstetstte"
     image: "/images/service-3.png"
     content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:

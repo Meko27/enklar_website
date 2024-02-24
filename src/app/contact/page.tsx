@@ -19,49 +19,65 @@ const Contact = async () => {
         image={image}
       />
       <PageHeader title={title} />
+      <p className="text-center mt-4 mb-4">{description}</p>
       <section className="section-sm">
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form action={contact_form_action} method="POST">
+              <form action={contact_form_action} method="POST" data-netlify="true">   {/* Use formtree as contact form action for now */}
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
-                    Full Name <span className="text-red-500">*</span>
+                    Vor- und Nachname <span className="text-red-500">*</span>
                   </label>
                   <input
                     id="name"
                     name="name"
                     className="form-input"
-                    placeholder="John Doe"
+                    placeholder="Max Mustermann"
                     type="text"
+                    required
                   />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="email" className="form-label">
-                    Working Mail <span className="text-red-500">*</span>
+                     Postleitzahl <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="zip"
+                    name="zip"
+                    className="form-input"
+                    placeholder="22085"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div className="mb-6">
+                  <label htmlFor="email" className="form-label">
+                     E-Mail <span className="text-red-500">*</span>
                   </label>
                   <input
                     id="email"
                     name="email"
                     className="form-input"
-                    placeholder="john.doe@email.com"
+                    placeholder="max.mustermann@gmail.com"
                     type="email"
+                    required
                   />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="message" className="form-label">
-                    Anything else? <span className="text-red-500">*</span>
+                    Nachricht
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     className="form-input"
-                    placeholder="Message goes here..."
-                    rows={8}
+                    placeholder="Ihre Nachricht..."
+                    rows={1}
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">
-                  Submit
+                  Anfrage senden
                 </button>
               </form>
             </div>

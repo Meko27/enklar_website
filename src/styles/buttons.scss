@@ -7,7 +7,8 @@
 }
 
 .btn-primary {
-  @apply border-primary bg-primary text-white dark:border-darkmode-primary dark:bg-white dark:text-dark;
+  @apply border-primary text-white dark:border-darkmode-primary dark:text-dark;
+  background-color: #016D5D; // Directly apply the color
 }
 
 .btn-outline-primary {

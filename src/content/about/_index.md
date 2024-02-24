@@ -1,6 +1,6 @@
 ---
-title: "Hey, I am John Doe!"
-meta_title: "About"
+title: "Das ist Enklar"
+meta_title: "Über uns"
 description: "this is meta description"
 image: "/images/avatar.png"
 draft: false

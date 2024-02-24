@@ -5,36 +5,41 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Elements",
+      "name": "Energieberatung",
       "url": "/elements"
     },
     {
-      "name": "Pages",
+      "name": "Geschäftskunden",
+      "url": "/elements"
+    },
+    {
+      "name": "Wissen",
+      "url": "/elements"
+    },
+    
+    {
+      "name": "Unsere Leistungen",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Contact",
+          "name": "Energieberatung",
           "url": "/contact"
         },
         {
-          "name": "Blog",
+          "name": "Förderanträge",
           "url": "/blog"
         },
         {
-          "name": "Authors",
+          "name": "Baubegleitung",
           "url": "/authors"
         },
         {
-          "name": "Categories",
+          "name": "Wärmepumpe",
           "url": "/categories"
         },
         {
-          "name": "Tags",
+          "name": "Photovoltaik",
           "url": "/tags"
         },
         {
@@ -42,15 +47,27 @@
           "url": "/404"
         }
       ]
+    },
+    {
+      "name": "Über uns",
+      "url": "/about"
     }
   ],
   "footer": [
     {
-      "name": "Elements",
+      "name": "Karriere",
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
+      "name": "Impressum",
+      "url": "/elements"
+    },
+    {
+      "name": "Datenschutzhinweise",
+      "url": "/privacy-policy"
+    },
+    {
+      "name": "AGB",
       "url": "/privacy-policy"
     }
   ]

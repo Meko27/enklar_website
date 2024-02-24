@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "Enklar",
+    "base_url": "https://enklar.de",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_text": "Enklar"
   },
 
   "settings": {
@@ -23,8 +23,8 @@
   },
 
   "params": {
-    "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "contact_form_action": "https://formspree.io/f/mwkgbpkv",
+    "copyright": " "
   },
 
   "navigation_button": {
