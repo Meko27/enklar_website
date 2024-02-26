@@ -4,6 +4,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
+import Advantages from "@/partials/Advantages";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
@@ -11,6 +12,7 @@ import { FaCheck } from "react-icons/fa";
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
+  const advantages = getListPage("sections/advantages.md")
   const callToAction = getListPage("sections/call-to-action.md");
   const { frontmatter } = homepage;
   const {
@@ -64,6 +66,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <Advantages data={advantages} />
 
       {features.map((feature, index: number) => (
         <section

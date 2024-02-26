@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Ihre Partner bei der energetischen Sanierung"
-  content: "Wir begleiten Sie anhand Ihrer Bedürfnisse und Wünsche von der ersten Beratung über die Planung, Finanzierung und Umsetzung der Sanierung Ihres Hauses."
+  title: "Ihr Partner für die \nenergetische Sanierung"
+  content: ""
   image: "/images/banner.png"
   button:
     enable: true

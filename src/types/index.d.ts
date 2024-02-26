@@ -60,6 +60,13 @@ export type Testimonial = {
   content: string;
 };
 
+export type Advantage = {
+  name: string;
+  designation: string;
+  avatar: string;
+  content: string;
+};
+
 export type Call_to_action = {
   enable?: boolean;
   title: string;
