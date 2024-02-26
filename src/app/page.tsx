@@ -29,7 +29,7 @@ const Home = () => {
       <section className="section pt-14">
         <div className="container">
           <div className="row justify-center">
-            <div className="lg:col-7 md:col-9 mb-8 text-center">
+            <div className="lg:col-7 md:col-9 mb-8 text-center rounded-lg">
               <h1
                 className="mb-4 text-h3 lg:text-h1"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
@@ -52,10 +52,10 @@ const Home = () => {
               )}
             </div>
             {banner.image && (
-              <div className="col-12">
+              <div className="col-12 rounded-lg">
                 <ImageFallback
                   src={banner.image}
-                  className="mx-auto"
+                  className="mx-auto rounded-lg"
                   width="800"
                   height="420"
                   alt="banner image"
@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <Advantages data={advantages} />
 
       {features.map((feature, index: number) => (
