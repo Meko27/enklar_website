@@ -6,6 +6,11 @@ import { Advantage } from "@/types";
 import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBolt, faPiggyBank, faHandshakeSimple } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faBolt, faPiggyBank, faHandshakeSimple); 
 
 interface PageData {
   notFound?: boolean;
@@ -55,20 +60,14 @@ const Advantages = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Advantage, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light">
+                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light text-center">
                           <div className="text-dark dark:text-white">
                           <div className="text-dark dark:text-white flex flex-col items-center justify-center">
-                            <ImageFallback
-                              height={50}
-                              width={50}
-                              className="rounded-full"
-                              src={item.avatar}
-                              alt={item.name}
-                            />
+                            <FontAwesomeIcon icon={item.icon} color="#016D5D" className="rounded-full fa-2xl" />
                           </div>
                           </div>
                           <blockquote
-                            className="mt-8"
+                            className="mt-8 items-center justify-center"
                             dangerouslySetInnerHTML={markdownify(item.content)}
                           />
                           <div className="mt-11 flex items-center justify-center">
@@ -76,7 +75,7 @@ const Advantages = ({ data }: { data: PageData }) => {
                             <div className="ml-4">
                               <h3
                                 dangerouslySetInnerHTML={markdownify(item.name)}
-                                className="h5 font-primary font-semibold items-center"
+                                className="h5 font-primary font-semibold items-center justify-center"
                               />
                               <p
                                 dangerouslySetInnerHTML={markdownify(

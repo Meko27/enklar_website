@@ -63,7 +63,7 @@ export type Testimonial = {
 export type Advantage = {
   name: string;
   designation: string;
-  avatar: string;
+  icon: string;
   content: string;
 };
 
