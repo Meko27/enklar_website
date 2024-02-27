@@ -6,11 +6,22 @@ import { Advantage } from "@/types";
 import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { library } from '@fortawesome/fontawesome-svg-core';
+//import { library } from '@fortawesome/fontawesome-svg-core';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faBolt, faPiggyBank, faHandshakeSimple } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faBolt, faPiggyBank, faHandshakeSimple); 
+// library.add(faBolt, faPiggyBank, faHandshakeSimple); 
+type IconKey = 'bolt' | 'piggybank' | 'handshake';
+interface IconMap {
+  [key: string]: IconDefinition;
+};
+
+const iconMap: Record<IconKey, IconDefinition> = {
+  bolt: faBolt,
+  piggybank: faPiggyBank,
+  handshake: faHandshakeSimple,
+};
 
 interface PageData {
   notFound?: boolean;
@@ -63,7 +74,7 @@ const Advantages = ({ data }: { data: PageData }) => {
                         <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light text-center">
                           <div className="text-dark dark:text-white">
                           <div className="text-dark dark:text-white flex flex-col items-center justify-center">
-                            <FontAwesomeIcon icon={item.icon} color="#016D5D" className="rounded-full fa-2xl" />
+                            <FontAwesomeIcon icon={iconMap[item.icon as IconKey]} color="#016D5D" className="rounded-full fa-2xl" />
                           </div>
                           </div>
                           <blockquote

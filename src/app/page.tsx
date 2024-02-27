@@ -97,7 +97,7 @@ const Home = () => {
                 }`}
               >
                 <h2
-                  className="mb-4"
+                  className="mb-4" 
                   dangerouslySetInnerHTML={markdownify(feature.title)}
                 />
                 <p
