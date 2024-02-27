@@ -33,7 +33,7 @@ const Advantages = ({ data }: { data: PageData }) => {
               <div className="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
                 <h2
                   dangerouslySetInnerHTML={markdownify(data.frontmatter.title)}
-                  className="mb-4"
+                  className="mb-2"
                 />
                 <p
                   dangerouslySetInnerHTML={markdownify(
@@ -47,7 +47,7 @@ const Advantages = ({ data }: { data: PageData }) => {
                   pagination={{ clickable: true }}
                   loop={true}              
                   centeredSlides={false}
-                  spaceBetween={24}
+                  spaceBetween={12}
                   breakpoints={{
                     768: {
                       slidesPerView: 2,
