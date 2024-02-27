@@ -107,7 +107,7 @@ const Home = () => {
                 <ul>
                   {feature.bulletpoints.map((bullet: string) => (
                     <li className="relative mb-4 pl-6" key={bullet}>
-                      <FaCheck className={"absolute left-0 top-1.5"} />
+                      <FaCheck className={"absolute left-0 top-1.5"} style={{color: '#016D5D'}}/>
                       <span dangerouslySetInnerHTML={markdownify(bullet)} />
                     </li>
                   ))}

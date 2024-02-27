@@ -11,54 +11,52 @@ banner:
 
 # Features
 features:
-  - title: ""
+  - title: "Energieberatung"
     image: "/images/service-1.png"
-    content: "Nextplate is a comprehensive starter template that includes everything you need to get started with your Next project. What's Included in Nextplate"
+    content: "Profitieren Sie von unserer maßgeschneiderten Energieberatung, um Ihre Immobilie energetisch zu analysieren und Energie- sowie Kosteneinsparung durch eine erhöhte Energieeffizienz zu realisieren."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Next and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Next"
-    image: "/images/service-2.png"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "**Vor-Ort** Analyse bei Ihnen Zuhause"
+      - "Umfangreiche Energieberatung"
+      - "Auf Ihre Sitation und Ziele abgestimmter **Sanierungsfahrplan**"
+      - "**5% Bonus-Förderung** auf Umsetzung einzelner Maßnahmen sichern"
     button:
       enable: true
-      label: "Get Started Now"
+      label: "Jetzt anfragen"
+      link: "/UnsereLeistungen/Energieberatung"
+
+  - title: "Förderservice BAFA & KfW"
+    image: "/images/service-2.png"
+    content: "Wir navigieren Sie durch jegliche Fördermöglichkeiten von BAFA oder KfW und sichern Ihnen die höchst mögliche Förderung für Ihr Projekt.
+            Zudem begleiten wir Ihr Projekt von der Planung über die Umsetzung bis zur Fertigstellung und Übergabe."
+    bulletpoints:
+      - "Kompetente Beratung & maximale Einsparung durch Bundes- und Landes-Förderprogramme"
+      - "Wir übernehmen die Bearbeitung Ihrer Förderanträge & Begleitung Ihres Vorhabens."
+      - "Umsetzung von Maßnahmen zur Verbesserung der Energieeffizienz."
+    button:
+      enable: false
+      label: "Jetzt anfragen"
       link: "https://github.com/zeon-studio/nextplate"
 
-  - title: "The Top Reasons to Choose Next for Your Next Project"
+  - title: "Beratung zur Wärmepumpe"
     image: "/images/service-3.png"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Sparen Sie tausende von Euros durch unsere Beratung bei der Auswahl Ihrer Wärmepumpe."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Maximale Ersparnis durch unabhängige Beratung."
+      - "Bis zu 70% Förderung bei Anschaffung einer Wärmepumpe erhalten."
+      - "Kostenfreie Beratung sichern."
     button:
       enable: false
       label: ""
       link: ""
 
-  - title: "Tstetstte"
+  - title: "Portfolioanalyse"
     image: "/images/service-3.png"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Sichern Sie Ihr Immobilienportfolio für die Zukunft durch unseren Service ab. 
+              Wir analysieren Ihr Portfolio und das Potential an Modernisierungsmaßnahmen hinsichtlich wirtschaftlicher und ökologischer Gesichtspunkte."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Nachhaltiges ESG Management."
+      - "Prognose des Stranding-Risikos basierend auf CRREM."
+      - "Klarheit, um die besten Entscheidungen für Ihren Bestand zu treffen."
     button:
       enable: false
       label: ""
