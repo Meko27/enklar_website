@@ -7,12 +7,22 @@ export const slugify = (content: string) => {
 };
 
 // markdownify
-export const markdownify = (content: string, div?: boolean) => {
-  const markdownContent: any = div
-    ? marked.parse(content)
-    : marked.parseInline(content);
+export const markdownify = (content: string, div?: boolean, wordsToColor: { word: string; color: string }[] = []) => {
+  let updatedContent = content;
+
+  wordsToColor.forEach(({ word, color }) => {
+    const wordRegex = new RegExp(`\\{color\\}${word}\\{\\/color\\}`, 'g');
+    updatedContent = updatedContent.replace(
+      wordRegex,
+      `<span style="color: ${color};">${word}</span>`
+    );
+  });
+
+  const markdownContent: any = div ? marked.parse(updatedContent) : marked.parseInline(updatedContent);
+
   return { __html: markdownContent };
 };
+
 
 // humanize
 export const humanize = (content: string) => {

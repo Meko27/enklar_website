@@ -32,7 +32,10 @@ const Home = () => {
             <div className="lg:col-7 md:col-9 mb-8 text-center rounded-lg">
               <h1
                 className="mb-4 text-h3 lg:text-h1"
-                dangerouslySetInnerHTML={markdownify(banner.title)}
+                dangerouslySetInnerHTML={markdownify(banner.title, true, [
+                                                                  { word: "energetische", color: "#016D5D" },
+                                                                  { word: "Sanierung", color: "#016D5D" }
+                ])}
               />
               <p
                 className="mb-8"
