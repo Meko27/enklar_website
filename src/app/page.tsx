@@ -89,6 +89,7 @@ const Home = () => {
                   height={480}
                   width={520}
                   alt={feature.title}
+                  className="rounded-lg"
                 />
               </div>
               <div

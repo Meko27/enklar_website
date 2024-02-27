@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "Energieberatung"
-    image: "/images/service-1.png"
+    image: "/images/energieberatung.png"
     content: "Profitieren Sie von unserer maßgeschneiderten Energieberatung, um Ihre Immobilie energetisch zu analysieren und Energie- sowie Kosteneinsparung durch eine erhöhte Energieeffizienz zu realisieren."
     bulletpoints:
       - "**Vor-Ort** Analyse bei Ihnen Zuhause"
@@ -25,7 +25,7 @@ features:
       link: "/UnsereLeistungen/Energieberatung"
 
   - title: "Förderservice BAFA & KfW"
-    image: "/images/service-2.png"
+    image: "/images/foerderung.png"
     content: "Wir navigieren Sie durch jegliche Fördermöglichkeiten von BAFA oder KfW und sichern Ihnen die höchst mögliche Förderung für Ihr Projekt.
             Zudem begleiten wir Ihr Projekt von der Planung über die Umsetzung bis zur Fertigstellung und Übergabe."
     bulletpoints:
@@ -38,7 +38,7 @@ features:
       link: "https://github.com/zeon-studio/nextplate"
 
   - title: "Beratung zur Wärmepumpe"
-    image: "/images/service-3.png"
+    image: "/images/waermepumpe.png"
     content: "Sparen Sie tausende von Euros durch unsere Beratung bei der Auswahl Ihrer Wärmepumpe."
     bulletpoints:
       - "Maximale Ersparnis durch unabhängige Beratung."
