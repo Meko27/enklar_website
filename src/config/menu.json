@@ -6,15 +6,15 @@
     },
     {
       "name": "Energieberatung",
-      "url": "/elements"
+      "url": "/contact"
     },
     {
       "name": "Geschäftskunden",
-      "url": "/elements"
+      "url": "/contact"
     },
     {
       "name": "Wissen",
-      "url": "/elements"
+      "url": "/contact"
     },
     
     {
@@ -28,23 +28,19 @@
         },
         {
           "name": "Förderanträge",
-          "url": "/blog"
+          "url": "/contact"
         },
         {
           "name": "Baubegleitung",
-          "url": "/authors"
+          "url": "/contact"
         },
         {
           "name": "Wärmepumpe",
-          "url": "/categories"
+          "url": "/contact"
         },
         {
           "name": "Photovoltaik",
-          "url": "/tags"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
+          "url": "/contact"
         }
       ]
     },
@@ -54,14 +50,6 @@
     }
   ],
   "footer": [
-    {
-      "name": "Karriere",
-      "url": "/elements"
-    },
-    {
-      "name": "Impressum",
-      "url": "/elements"
-    },
     {
       "name": "Datenschutzhinweise",
       "url": "/privacy-policy"

@@ -6,4 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Haus- und Wohnungseigentümer stehen vor der Aufgabe, die Energieeffizienz ihrer Immobilien zu verbessern. Derzeit werden in Deutschland pro Jahr rund 200.000 Immobilien saniert, doch um unsere Klimaziele zu erreichen, müssen es mehr als eine Million sein.
+
+Mit Enklar haben Eigentümer nun die Chance, ihre Immobilien energetisch zu optimieren und alle notwendigen Schritte hin zu einem klimaneutralen Zuhause zu unternehmen.
+

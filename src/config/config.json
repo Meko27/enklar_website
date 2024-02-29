@@ -31,11 +31,12 @@
   "navigation_button": {
     "enable": true,
     "label": "Jetzt loslegen",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "link": "/contact",
+    "url": "/contact"
   },
 
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   },
