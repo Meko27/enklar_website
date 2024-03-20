@@ -2,5 +2,8 @@
 User-agent: *
 Allow: /
 
+# Host
+Host: https://enklar.de
+
 # Sitemaps
 Sitemap: https://enklar.de/sitemap.xml
