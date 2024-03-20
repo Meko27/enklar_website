@@ -8,6 +8,7 @@ import Advantages from "@/partials/Advantages";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
+import Head from "next/head";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -25,6 +26,9 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
+      </Head>
       <SeoMeta />
       <section className="section pt-14">
         <div className="container">
