@@ -51,6 +51,10 @@
   ],
   "footer": [
     {
+      "name": "Impressum",
+      "url": "/privacy-policy"
+    },
+    {
       "name": "Datenschutzhinweise",
       "url": "/privacy-policy"
     },

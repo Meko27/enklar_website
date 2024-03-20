@@ -1,7 +1,7 @@
 ---
 title: "Das ist Enklar"
 meta_title: "Über uns"
-description: "this is meta description"
+description: "Enklar Energieberatung"
 image: "/images/avatar.png"
 draft: false
 ---
