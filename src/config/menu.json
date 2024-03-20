@@ -5,44 +5,8 @@
       "url": "/"
     },
     {
-      "name": "Energieberatung",
+      "name": "Kontakt",
       "url": "/contact"
-    },
-    {
-      "name": "Geschäftskunden",
-      "url": "/contact"
-    },
-    {
-      "name": "Wissen",
-      "url": "/contact"
-    },
-    
-    {
-      "name": "Unsere Leistungen",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Energieberatung",
-          "url": "/contact"
-        },
-        {
-          "name": "Förderanträge",
-          "url": "/contact"
-        },
-        {
-          "name": "Baubegleitung",
-          "url": "/contact"
-        },
-        {
-          "name": "Wärmepumpe",
-          "url": "/contact"
-        },
-        {
-          "name": "Photovoltaik",
-          "url": "/contact"
-        }
-      ]
     },
     {
       "name": "Über uns",
