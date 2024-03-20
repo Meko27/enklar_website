@@ -55,11 +55,11 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 
 ##### Hinweis zur verantwortlichen Stelle
 
-Ingenieurbüro Kohsar GbR 
+Ingenieurbüro Kohsar GbR  
 Spaldingstraße 210  
-20097 Hamburg
+20097 Hamburg  
 Telefon: 017634990073  
-E-Mail: info@kohsar.de
+E-Mail: info@kohsar.de  
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
 ##### Speicherdauer
