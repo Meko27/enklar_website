@@ -50,7 +50,7 @@ features:
       link: ""
 
   - title: "Portfolioanalyse"
-    image: "/images/service-3.png"
+    image: "/images/portfolio_analyse.png"
     content: "Sichern Sie Ihr Immobilienportfolio für die Zukunft durch unseren Service ab. 
               Wir analysieren Ihr Portfolio und das Potential an Modernisierungsmaßnahmen hinsichtlich wirtschaftlicher und ökologischer Gesichtspunkte."
     bulletpoints:
