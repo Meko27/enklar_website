@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Jetzt kostenlos anfragen"
-    link: "https://enklar.de/contact"
+    link: "https://enklar.de/kontakt"
 
 # Features
 features:
@@ -35,7 +35,7 @@ features:
     button:
       enable: false
       label: "Jetzt anfragen"
-      link: "https://enklar.de/contact"
+      link: "https://enklar.de/kontakt"
 
   - title: "Beratung zur Wärmepumpe"
     image: "/images/waermepumpe.png"

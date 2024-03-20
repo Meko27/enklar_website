@@ -31,8 +31,8 @@
   "navigation_button": {
     "enable": true,
     "label": "Jetzt loslegen",
-    "link": "/contact",
-    "url": "/contact"
+    "link": "/kontakt",
+    "url": "/kontakt"
   },
 
   "disqus": {
