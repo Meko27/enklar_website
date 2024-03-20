@@ -3,6 +3,7 @@
 import config from "@/config/config.json";
 import { plainify } from "@/lib/utils/textConverter";
 import { usePathname } from "next/navigation";
+import Head from "next/head";
 
 const SeoMeta = ({
   title,
@@ -25,6 +26,9 @@ const SeoMeta = ({
 
   return (
     <>
+      <Head>
+        <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
+      </Head>
       {/* title */}
       <title>
         {plainify(meta_title ? meta_title : title ? title : config.site.title)}
