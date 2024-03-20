@@ -20,7 +20,7 @@ const NotFound = async () => {
                 </p>
               </div>
               <Link href="/" className="btn btn-primary mt-8">
-                Back to home
+                Zur Startseite
               </Link>
             </div>
           </div>
