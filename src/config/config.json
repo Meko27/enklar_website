@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Enklar",
+    "title": "Enklar - Energieberatung | iSFP | Förderservice",
     "base_url": "https://enklar.de",
     "base_path": "/",
     "trailing_slash": false,
@@ -44,6 +44,6 @@
   "metadata": {
     "meta_author": "Enklar",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Energieberatung"
+    "meta_description": "Energieberatung | iSFP | Förderservice"
   }
 }
