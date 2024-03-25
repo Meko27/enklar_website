@@ -1,12 +1,17 @@
 ---
-title: "Das ist Enklar"
+title: "Enklar - Ihr Partner zur energetischen Zukunftssicherung von Gebäuden"
 meta_title: "Über uns"
 description: "Enklar Energieberatung"
-image: "/images/avatar.png"
+image: "/images/about.png"
 draft: false
 ---
 
-Haus- und Wohnungseigentümer stehen vor der Aufgabe, die Energieeffizienz ihrer Immobilien zu verbessern. Derzeit werden in Deutschland pro Jahr rund 200.000 Immobilien saniert, doch um unsere Klimaziele zu erreichen, müssen es mehr als eine Million sein.
+Wir sind ENKLAR, ein Vorreiter in der Energieberatung, der sich leidenschaftlich dafür einsetzt, Wohngebäude nachhaltig und zukunftsfähig zu gestalten. Unsere Gründung basiert auf dem Wunsch, eine greifbare Veränderung im Umgang mit Energieverbrauch und -effizienz herbeizuführen.
 
-Mit Enklar haben Eigentümer nun die Chance, ihre Immobilien energetisch zu optimieren und alle notwendigen Schritte hin zu einem klimaneutralen Zuhause zu unternehmen.
+### Unsere Vision
+Derzeit werden in Deutschland pro Jahr 200.000 Immobilien saniert, doch um unsere Klimaziele zu erreichen, müssen es mehr als über eine Million sein. Wir begleiten Eigentümer über den gesamten Sanierungsprozess und kümmern uns um die Planung, Projektierung und Umsetzung. 
+
+### Warum Enklar?
+Egal, ob Sie den Energieverbrauch Ihres Gebäudes senken, innovative Heiztechnologien einsetzen möchten oder eine umfassende Beratung für Ihr Immobilienportfolio suchen – Enklar ist Ihr Partner. Kontaktieren Sie uns und erfahren Sie, wie wir gemeinsam Ihre Ziele erreichen können.
+
 
