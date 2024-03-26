@@ -73,7 +73,7 @@ const Contact = async () => {
                     name="message"
                     className="form-input"
                     placeholder="Ihre Nachricht..."
-                    rows={1}
+                    rows={4}
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">
