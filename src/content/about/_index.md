@@ -6,7 +6,7 @@ image: "/images/about.png"
 draft: false
 ---
 
-Wir sind ENKLAR, ein Vorreiter in der Energieberatung, der sich leidenschaftlich dafür einsetzt, Wohngebäude nachhaltig und zukunftsfähig zu gestalten. Unsere Gründung basiert auf dem Wunsch, eine greifbare Veränderung im Umgang mit Energieverbrauch und -effizienz herbeizuführen.
+Wir sind Enklar, ein Vorreiter in der Energieberatung, der sich leidenschaftlich dafür einsetzt, Wohngebäude nachhaltig und zukunftsfähig zu gestalten. Unsere Gründung basiert auf dem Wunsch, eine greifbare Veränderung im Umgang mit Energieverbrauch und -effizienz herbeizuführen.
 
 ### Unsere Vision
 Derzeit werden in Deutschland pro Jahr 200.000 Immobilien saniert, doch um unsere Klimaziele zu erreichen, müssen es mehr als über eine Million sein. Wir begleiten Eigentümer über den gesamten Sanierungsprozess und kümmern uns um die Planung, Projektierung und Umsetzung. 
