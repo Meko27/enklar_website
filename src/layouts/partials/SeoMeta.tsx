@@ -30,7 +30,6 @@ const SeoMeta = ({
         <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
         {/* favicon */}
         <link rel="shortcut icon" href={config.site.favicon} />
-      </Head>
       {/* title */}
       <title>
         {plainify(meta_title ? meta_title : title ? title : config.site.title)}
@@ -40,7 +39,11 @@ const SeoMeta = ({
       {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
 
       {/* noindex robots */}
-      {noindex && <meta name="robots" content="noindex,nofollow" />}
+      {noindex && (
+      <meta
+      name="robots"
+      content={typeof noindex === 'boolean' ? 'noindex, nofollow' : noindex}
+      />)}
 
       {/* meta-description */}
       <meta
@@ -96,6 +99,7 @@ const SeoMeta = ({
         content={`${base_url}${image ? image : meta_image}`}
       />
       <meta name="twitter:card" content="summary_large_image" />
+      </Head>
     </>
   );
 };
