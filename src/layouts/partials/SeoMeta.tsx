@@ -28,6 +28,8 @@ const SeoMeta = ({
     <>
       <Head>
         <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
+        {/* favicon */}
+        <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
       {/* title */}
       <title>

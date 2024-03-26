@@ -3,6 +3,7 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
+import config from "@/config/config.json";
 import Testimonials from "@/partials/Testimonials";
 import Advantages from "@/partials/Advantages";
 import { Button, Feature } from "@/types";
@@ -28,6 +29,8 @@ const Home = () => {
     <>
       <Head>
         <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
+         {/* favicon */}
+         <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
       <SeoMeta />
       <section className="section pt-14">
