@@ -44,7 +44,7 @@ export default function RootLayout({
         <meta property="og:title" content="Enklar - Energieberatung | Förderservice | iSFP" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.enklar.de" />
-        <meta property="og:description" content="Ihr Partner zum Thema Sanierung" />
+        <meta property="og:description" content="Ihr verlässlicher Partner für die energetische Sanierung" />
         <meta property="og:image" content="https://enklar.de/images/favicon.png" />
 
         {/* google font css */}
