@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Jetzt kostenlos anfragen"
-    link: "https://enklar.de/kontakt"
+    link: "/kontakt"
 
 # Features
 features:
@@ -22,7 +22,7 @@ features:
     button:
       enable: true
       label: "Jetzt anfragen"
-      link: "/UnsereLeistungen/Energieberatung"
+      link: "/kontakt"
 
   - title: "Förderservice BAFA & KfW"
     image: "/images/foerderung.png"
@@ -35,7 +35,7 @@ features:
     button:
       enable: false
       label: "Jetzt anfragen"
-      link: "https://enklar.de/kontakt"
+      link: "/kontakt"
 
   - title: "Beratung zur Wärmepumpe"
     image: "/images/waermepumpe.png"
