@@ -28,6 +28,9 @@ Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit
 
 #### 2. Hosting  
 Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+Netlify, Inc.  
+44 Montgomery St  
+San Francisco, California 94104, US  
 
 ##### Externes Hosting
 Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.  
@@ -55,7 +58,7 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 
 ##### Hinweis zur verantwortlichen Stelle
 
-Ingenieurbüro Kohsar GbR  
+Enklar GmbH  
 Spaldingstraße 210  
 20097 Hamburg  
 Telefon: 017634990073  
