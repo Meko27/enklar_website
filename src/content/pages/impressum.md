@@ -18,13 +18,8 @@ Mehratsch Kohsar
 Eingetragen im Handelsregister des Amtsgerichts Hamburg unter HRB 186410.
 
 #### Kontakt
-Telefon: 017634990073  
-FAX: 
-E-Mail: info@kohsar.de
-
-#### Umsatzsteuer-ID
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: 
-DE999999999
+Telefon: 01722001698  
+E-Mail: info@enklar.de
 
 #### EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.
