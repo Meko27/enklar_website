@@ -89,3 +89,4 @@ const Contact = async () => {
   );
 };
 
+export default Contact;
