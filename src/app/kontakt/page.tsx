@@ -23,7 +23,8 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form method="POST" data-netlify="true" name="contact">   
+              <form name="contact" method="POST" data-netlify="true" >  
+                <input type="hidden" name="form-name" value="contact" /> 
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
                     Vor- und Nachname <span className="text-red-500">*</span>
