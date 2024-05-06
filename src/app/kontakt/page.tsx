@@ -8,7 +8,6 @@ const Contact = async () => {
   const data: RegularPage = getListPage("kontakt/_index.md");
   const { frontmatter } = data;
   const { title, description, meta_title, image } = frontmatter;
-  const { contact_form_action } = config.params;
 
   return (
     <>
@@ -24,7 +23,7 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form method="POST" data-netlify="true" name="contactForm">   {/* action={contact_form_action} Use formtree as contact form action for now */}
+              <form method="POST" data-netlify="true" name="contact">   
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
                     Vor- und Nachname <span className="text-red-500">*</span>
