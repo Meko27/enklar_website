@@ -1,11 +1,16 @@
+import ImageFallback from "@/helpers/ImageFallback";
+import { markdownify } from "@/lib/utils/textConverter";
+import { Button } from "@/types";
 import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
+import Image from 'next/image';
+import Link from 'next/link';
 
-const Contact = async () => {
-  const data: RegularPage = getListPage("kontakt/_index.md");
+const Therm = async () => {
+  const data: RegularPage = getListPage("therm/_index.md");
   const { frontmatter } = data;
   const { title, description, meta_title, image } = frontmatter;
 
@@ -23,7 +28,7 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-            <form method="POST" data-netlify="true" name="contact">
+            <form method="POST" data-netlify="true" name="contactForm">
               <input type="hidden" name="contactForm" value="contactForm" />
               <div className="mb-6">
                 <label htmlFor="name" className="form-label">
@@ -89,4 +94,4 @@ const Contact = async () => {
   );
 };
 
-export default Contact;
+export default Therm;
