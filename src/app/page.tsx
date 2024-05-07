@@ -1,10 +1,8 @@
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
-import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import config from "@/config/config.json";
-import Testimonials from "@/partials/Testimonials";
 import Advantages from "@/partials/Advantages";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
@@ -13,9 +11,7 @@ import Head from "next/head";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
-  const testimonial = getListPage("sections/testimonial.md");
   const advantages = getListPage("sections/advantages.md")
-  const callToAction = getListPage("sections/call-to-action.md");
   const { frontmatter } = homepage;
   const {
     banner,
