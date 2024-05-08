@@ -53,6 +53,12 @@ export type Feature = {
   title: string;
 };
 
+export type Advantage_therm = {
+  id: string;
+  text: string;
+  icon: string; 
+};
+
 export type Testimonial = {
   name: string;
   designation: string;
