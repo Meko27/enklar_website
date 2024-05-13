@@ -5,8 +5,9 @@ title: "Ihre Vorteile🚀"
 description: "Mit uns sparen Sie nicht nur Nerven sondern auch Geld."
 # Banner
 banner:
-  title: "Smart & digital arbeiten mit unserer Lösung Enklar-therm"
+  title: "Smart & digital arbeiten mit unserer Lösung <br /><span style='color: #016D5D;'>Enklar-therm</span>"
   content: "Nutzen Sie innovative Lösung, für die Planung und Verkauf von Heizungen."
+  button_footer: "✔️Unverbindlich ✔️Völlig kostenlos  ✔️Sofortiger Mehrwert"
   image: "/images/mockup1.png"
   button:
     enable: true

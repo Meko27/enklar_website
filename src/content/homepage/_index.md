@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Ihr Partner für die energetische Sanierung"
+  title: "Ihr Partner für die <br /><span style='color: #016D5D;'>energetische Sanierung</span>"
   content: ""
   image: "/images/banner.png"
   button:

@@ -4,15 +4,15 @@ enable: true
 # Testimonials
 advantages:
   - id: "1"
-    text: "Kein langes Warten mehr. Innerhalb von 2 Wochen kommt ein Experte zur Datenaufnahme zu Ihnen nach Hause."
-    icon: "bolt"
+    text: "100% DIN-konform<br />"
+    icon: "check"
   - id: "2"
-    text: "Kein langes Warten mehr. Innerhalb von 2 Wochen kommt ein Experte zur Datenaufnahme zu Ihnen nach Hause."
+    text: "Der schnellste Weg zu Heizlastberechnung"
     icon: "bolt"
   - id: "3"
-    text: "Kein langes Warten mehr. Innerhalb von 2 Wochen kommt ein Experte zur Datenaufnahme zu Ihnen nach Hause."
-    icon: "bolt"
+    text: "Steigerung der Kundenzufriedenheit"
+    icon: "trend"
   - id: "4"
-    text: "Kein langes Warten mehr. Innerhalb von 2 Wochen kommt ein Experte zur Datenaufnahme zu Ihnen nach Hause."
-    icon: "bolt"
+    text: "Entlastung Ihrer Kollegen"
+    icon: "smile"
 ---

@@ -16,7 +16,7 @@ const Therm = async () => {
   const { frontmatter: advantagesData } = getListPage("sections/advantages_therm.md");
   const { frontmatter } = therm;
   const { banner, features}: {
-    banner: {meta_title: string; title: string; description: string; image: string; content:string; button?: Button};
+    banner: {meta_title: string; title: string; description: string; image: string; content:string; button_footer: string; button?: Button};
     features: Feature[];
   } = frontmatter;
 
@@ -30,7 +30,7 @@ const Therm = async () => {
       <SeoMeta title={banner.title} description={banner.description} image={banner.image} />
 
        {/* Banner Section */}
-       <section className="section pt-14">
+       <section className="section pt-14 pb-2">
         <div className="container">
           <div className="row justify-center">
           <div className="col-12 rounded-lg">
@@ -51,6 +51,7 @@ const Therm = async () => {
                   {banner.button!.label}
                 </Link>
               )}
+              <p className="mb-8" dangerouslySetInnerHTML={markdownify(banner.button_footer)} />
             </div>
           </div>
         </div>
