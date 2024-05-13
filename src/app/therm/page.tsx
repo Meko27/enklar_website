@@ -34,7 +34,7 @@ const Therm = async () => {
         <div className="container">
           <div className="row justify-center">
           <div className="col-12 rounded-lg">
-              <ImageFallback src={banner.image} className="mx-auto rounded-lg" width="500" height="300" alt="banner image" priority />
+              <ImageFallback src={banner.image} className="mx-auto rounded-lg" width="600" height="300" alt="banner image" priority />
             </div>
             <div className="lg:col-7 md:col-9 mb-8 text-center rounded-lg">
               <h1 className="mb-4 text-h3 m:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />

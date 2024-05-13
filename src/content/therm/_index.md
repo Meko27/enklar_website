@@ -1,11 +1,11 @@
 ---
 meta_title: "Enklar-therm"
 enable: true
-title: "Ihre Vorteile🚀"
+title: "Ihre Vorteile"
 description: "Mit uns sparen Sie nicht nur Nerven sondern auch Geld."
 # Banner
 banner:
-  title: "Heizlastberechnung und Förderservice war noch nie so einfach wie mit <span style='color: #016D5D;'>Enklar-therm</span>"
+  title: "Heizlastberechnung und Förderservice so einfach wie nie mit <span style='color: #016D5D;'>Enklar-therm</span>"
   content: "Nutzen Sie den Vorteil unserer digitalen Lösung, um die Heizlastberchnung digitalisiert und innerhalb weniger Tage präzise nach DIN 12831 von uns bereitgestellt zu bekommen."
   button_footer: "✔️Unverbindlich ✔️Kostenlos ✔️Sofortiger Mehrwert"
   image: "/images/mockup1.png"

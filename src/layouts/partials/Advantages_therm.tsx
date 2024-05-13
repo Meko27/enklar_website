@@ -13,6 +13,7 @@ const iconMap = {
 };
 
 // Define the props structure based on expected data
+
 interface Advantage {
   id: string;
   text: string;
@@ -20,6 +21,8 @@ interface Advantage {
 }
 
 interface AdvantagesData {
+  title: string;
+  description: string;
   enable: boolean;
   advantages: Advantage[];
 }
@@ -31,6 +34,18 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
     <section className="section pt-1">
       <div className="container">
         <div className="row">
+        <div className="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+                <h2
+                  dangerouslySetInnerHTML={markdownify(data.title)}
+                  className="mb-2"
+                />
+                <p
+                  dangerouslySetInnerHTML={markdownify(
+                    data.description!,
+                  )}
+                />
+              </div>
+              <div className="row">
           {data.advantages.map((advantage, index) => (
             <div key={index} className="advantage-item">
               <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light text-center">
@@ -44,6 +59,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -64,7 +80,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           align-items: center;
           min-height: 100px; // Ensures all items are the same height
           justify-content: center;
-          height: 100px; // This line will ensure all items stretch to the same height
+          height: 150px; // This line will ensure all items stretch to the same height
         }
         .rounded-lg {
           width: 100%;

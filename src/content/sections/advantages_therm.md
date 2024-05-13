@@ -1,5 +1,7 @@
 ---
 enable: true
+title: "Ihre Vorteile auf einem Blick🚀"
+description: ""
 
 # Testimonials
 advantages:
