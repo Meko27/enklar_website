@@ -89,6 +89,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           justify-content: center;
           align-items: center;
           height: 100%; // This line makes the content use all available height
+          background-color: #dbdbdb; // Use a CSS variable for theme color
         }
         .text-container {
           margin-top: 20px;

@@ -10,10 +10,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from "next/head";
 import Advantages_therm from "@/partials/Advantages_therm";
+import Process_therm from "@/partials/Process_therm";
+import Testimonials from "@/partials/Testimonials";
 
 const Therm = async () => {
   const therm = getListPage("therm/_index.md");
   const { frontmatter: advantagesData } = getListPage("sections/advantages_therm.md");
+  const { frontmatter: processData } = getListPage("sections/process_therm.md");
+  const testimonialData = getListPage("sections/testimonial_therm.md");
   const { frontmatter } = therm;
   const { banner, features}: {
     banner: {meta_title: string; title: string; description: string; image: string; content:string; button_footer: string; button?: Button};
@@ -59,6 +63,13 @@ const Therm = async () => {
 
       {/* Advantage Sections */}
       <Advantages_therm data={advantagesData} />
+
+      {/* Process Sections */}
+      <Process_therm data={processData} />
+
+      {/* Testimonial Sections */}
+      <Testimonials data={testimonialData} />
+
 
       {/* Additional Sections */}
       {features.map((feature, index) => (

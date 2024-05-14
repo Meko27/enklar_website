@@ -11,7 +11,7 @@ interface PageData {
   notFound?: boolean;
   content?: string;
   frontmatter: {
-    enable?: boolean;
+    enable: boolean;
     title: string;
     description?: string;
     testimonials: Array<Testimonial>;
@@ -59,7 +59,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Testimonial, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light">
+                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light" style={{ backgroundColor: '#dbdbdb', height: '300px'}}>
                           <div className="text-dark dark:text-white">
                             <svg
                               width="33"

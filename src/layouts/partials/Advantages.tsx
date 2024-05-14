@@ -71,7 +71,7 @@ const Advantages = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Advantage, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light text-center">
+                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light text-center" style={{ backgroundColor: '#dbdbdb'}}>
                           <div className="text-dark dark:text-white">
                           <div className="text-dark dark:text-white flex flex-col items-center justify-center">
                             <FontAwesomeIcon icon={iconMap[item.icon as IconKey]} color="#016D5D" className="rounded-full fa-2xl" />
