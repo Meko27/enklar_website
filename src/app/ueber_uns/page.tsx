@@ -5,8 +5,8 @@ import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
 
-const About = () => {
-  const data: RegularPage = getListPage("about/_index.md");
+const Ueber_uns = () => {
+  const data: RegularPage = getListPage("ueber_uns/_index.md");
   const { frontmatter, content } = data;
   const { title, meta_title, description, image } = frontmatter;
 
@@ -46,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Ueber_uns;
