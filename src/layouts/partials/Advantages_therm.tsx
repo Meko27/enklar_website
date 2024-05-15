@@ -48,8 +48,8 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
               <div className="row">
           {data.advantages.map((advantage, index) => (
             <div key={index} className="advantage-item">
-              <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light text-center">
-                <FontAwesomeIcon icon={iconMap[advantage.icon]} size="2x" color="#016D5D" />
+              <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light text-center">
+                <FontAwesomeIcon icon={iconMap[advantage.icon]} size="2x" color="#FF5733" />
                 <div className="text-container ml-2 mt-4">
                   <h3
                     dangerouslySetInnerHTML={markdownify(advantage.text)}

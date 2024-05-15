@@ -89,16 +89,18 @@ const Therm = async () => {
               <div className={`md:col-7 lg:col-6 ${index % 2 !== 0 ? "md:order-1" : ""}`}>
                 <h2 className="mb-4" dangerouslySetInnerHTML={markdownify(feature.title)} />
                 <p className="mb-8 text-lg" dangerouslySetInnerHTML={markdownify(feature.content)} />
+                {feature.button!.enable && (
                 <Link
                   className="btn btn-primary"
-                  href={banner.button!.link}
+                  href={feature.button!.link}
                   target={
-                    banner.button!.link.startsWith("http") ? "_blank" : "_self"
+                    feature.button!.link.startsWith("http") ? "_blank" : "_self"
                   }
                   rel="noopener"
                 >
-                  {banner.button!.label}
+                  {feature.button!.label}
                 </Link>
+                )}
               </div>
             </div>
           </div>
