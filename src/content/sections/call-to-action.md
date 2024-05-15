@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Ready to build your next project with Next?"
-image: "/images/call-to-action.png"
-description: "Experience the future of web development with Nextplate and Next. Build lightning-fast static sites with ease and flexibility."
+title: "Erhöhen Sie Ihre Effizienz & Kundenzufriedenheit und starten durch mit unserem Service <span style='color: #016D5D;'>Enklar-therm</span>"
+image: "/images/portrait3.png"
+description: "In einem kostenlosen unverbindlichen 15-Minuten Gespräch freuen wir uns Ihnen alle Vorteile unseres Services näherzubringen."
 button:
   enable: true
   label: "Jetzt kostenlos Anfragen"

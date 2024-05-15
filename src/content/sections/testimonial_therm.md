@@ -1,6 +1,6 @@
 ---
 enable: true
-title: "Wir konnten schon einigen Kunden helfen"
+title: "Vielen Kunden konnten wir bereits helfen"
 description: ""
 
 # Testimonials
