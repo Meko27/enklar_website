@@ -2,7 +2,7 @@
 title: "Enklar - Ihr Partner zur energetischen Zukunftssicherung von Gebäuden"
 meta_title: "Über uns"
 description: "Enklar Energieberatung"
-image: "/images/about.png"
+image: "/images/about.jpeg"
 draft: false
 ---
 
