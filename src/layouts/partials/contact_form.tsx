@@ -71,6 +71,7 @@ const ContactForm = () => {
           border: none;
           border-radius: 5px;
           cursor: pointer;
+          max-width: 220px;
         }
         .submit-button:hover {
           background-color: #014f4a;
