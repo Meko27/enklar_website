@@ -8,7 +8,7 @@ advantages:
   - id: "1"
     text: "1. Digitale Datenaufnahme beim Kunden<br />"
     description_card: "Über unser **intelligentes Webtool** gibt der Kunde alle relevanten Daten bequem von zuhause aus ein. Diese werden umgehend nach Plausibilität geprüft."
-    image: "/images/mockup1.png"
+    image: "/images/mockup_n_small.png"
   - id: "2"
     text: "2. Heizlastberechnung nach DIN 12831 innerhalb 48h"
     description_card: "Die Heizlast wird in nur wenigen Minuten **bei Bedarf** nach **DIN 12831** berechnet sobald die Dateneingabe vollständig ist. Der Kunde und Sie erhalten das Ergebnis umgehend per Mail."
