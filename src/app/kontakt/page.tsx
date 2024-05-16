@@ -23,8 +23,7 @@ const Contact = async () => {
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-            <form method="POST" data-netlify="true" name="contact">
-              <input type="hidden" name="contactForm" value="contactForm" />
+            <form method="POST" action="https://formspree.io/f/mvoeylkg" name="contact">
               <div className="mb-6">
                 <label htmlFor="name" className="form-label">
                   Vor- und Nachname <span className="text-red-500">*</span>
