@@ -9,7 +9,7 @@ const ContactForm = () => {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
+          action="https://formspree.io/f/meqydney"
           netlify-honeypot="bot-field"
           className="contact-form"
         >
