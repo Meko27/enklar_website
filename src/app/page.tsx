@@ -8,6 +8,7 @@ import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import Head from "next/head";
+import Script from 'next/script';
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -25,6 +26,7 @@ const Home = () => {
     <>
       <Head>
         <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
+        <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive"></script>
          {/* favicon */}
          <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
@@ -132,6 +134,7 @@ const Home = () => {
 
       {/*<Testimonials data={testimonial} />*/}
       {/*<CallToAction data={callToAction} />*/}
+      
     </>
   );
 };

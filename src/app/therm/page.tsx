@@ -120,6 +120,7 @@ const Therm = async () => {
 
       {/* CallToAction Sections */}
       <CallToAction data={callToActionData} />
+      
 
     </>
   );
