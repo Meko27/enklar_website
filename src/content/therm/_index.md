@@ -6,7 +6,7 @@ description: "Mit uns sparen Sie nicht nur Nerven sondern auch Geld."
 # Banner
 banner:
   title: "Heizlastberechnung und Förderservice so einfach wie nie mit unserem Service <span style='color: #016D5D;'>Enklar.</span><span style='color: #B8860B;'>Therm</span>"
-  content: "Nutzen Sie den Vorteil unseres digitalen Ansatzes, um die Heizlastberchnung digitalisiert und innerhalb weniger Tage präzise nach DIN 12831 von uns bereitgestellt zu bekommen."
+  content: "Nutzen Sie den Vorteil unseres digitalen Ansatzes, um die Heizlastberechnung präzise nach DIN 12831 und den Förderservice digitalisiert und innerhalb weniger Tage über uns abzuwickeln."
   meta_title: "Enklar.Therm"
   button_footer: "✔️Unverbindlich & Kostenlos"
   image: "/images/mockup_n.png"
@@ -32,6 +32,4 @@ features:
       enable: false
       label: "Jetzt anfragen"
       link: "/kontakt"
-
-
 ---
