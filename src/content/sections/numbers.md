@@ -1,6 +1,6 @@
 ---
 enable: true
-title: "Enklar-therm auf einem Blick"
+title: "<span style='color: #016D5D;'>Enklar.</span><span style='color: #B8860B;'>Therm</span> auf einem Blick"
 description: ""
 
 # Testimonials

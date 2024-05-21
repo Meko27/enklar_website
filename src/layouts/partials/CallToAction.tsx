@@ -2,6 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Call_to_action } from "@/types";
 import Link from "next/link";
+import Image from 'next/image';
 import ContactForm from "./contact_form";
 
 interface PageData {
@@ -32,6 +33,11 @@ const CallToAction = ({ data }: { data: PageData }) => {
                     )}
                     className="mb-6"
                   />
+
+                  <div className="partner-logo items-left">
+                    <Image src="/images/EE_EnergieeffizienzExperten_Logo_m.png" alt="Expertenlogo" width={200} height={100} />
+                  </div>
+                  
                   {data.frontmatter.button.enable && (
                     <Link
                       className="btn btn-primary"

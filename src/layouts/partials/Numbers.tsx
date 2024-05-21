@@ -95,7 +95,7 @@ const Numbers = ({ data }: { data: AdvantagesData }) => {
           margin-top: 20px;
         }
         .number-text {
-          color: #016D5D !important!;
+          color: #F39C12 !important!;
         }
       `}</style>
     </section>
@@ -113,7 +113,7 @@ const AdvantageItem = ({ advantage }: { advantage: Advantage }) => {
   return (
     <div ref={ref} className="advantage-item">
       <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light text-center">
-        <h2 className="h1 font-primary font-semibold items-center justify-center number-text"  style={{ color: '#016D5D' }}>
+        <h2 className="h1 font-primary font-semibold items-center justify-center number-text"  style={{ color: '#B8860B' }}>
           {inView && (
             <CountUp
               end={parseInt(advantage.number, 10)}
