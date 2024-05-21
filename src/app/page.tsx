@@ -26,10 +26,12 @@ const Home = () => {
     <>
       <Head>
         <meta name="google-site-verification" content="xGfKcUzJYFOYPCbx6ac-nRsL600rVekYV-60SYL3p48" />
-        <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive"></script>
          {/* favicon */}
          <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
+      <Script 
+          id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive">
+      </Script>
       <SeoMeta />
       <section className="section pt-14">
         <div className="container">
