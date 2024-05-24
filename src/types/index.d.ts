@@ -86,3 +86,15 @@ export type Button = {
   label: string;
   link: string;
 };
+
+// Needed for heyflow embed
+declare namespace JSX {
+  interface IntrinsicElements {
+    'heyflow-wrapper': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+      'flow-id'?: string;
+      'dynamic-height'?: boolean;
+      'scroll-up-on-navigation'?: boolean;
+      'style-config'?: string;
+    };
+  }
+}

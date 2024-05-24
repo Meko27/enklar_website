@@ -14,6 +14,7 @@ import Advantages_therm from "@/partials/Advantages_therm";
 import Numbers from "@/partials/Numbers";
 import Process_therm from "@/partials/Process_therm";
 import Testimonials from "@/partials/Testimonials";
+import Script from 'next/script';
 
 const Foerderservice = async () => {
   const therm = getListPage("therm/_index.md");
@@ -46,9 +47,14 @@ const Foerderservice = async () => {
 
   return (
     <>
+    <Script
+      id="heyflow" src="https://static.heyflow.com/widget/latest/webview.js">
+    </Script>
 
+    <heyflow-wrapper flow-id="f_rderservice" dynamic-height scroll-up-on-navigation style-config='{"width": "100%"}'></heyflow-wrapper>
     </>
   );
 };
 
 export default Foerderservice;
+
