@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faBolt, faArrowTrendUp, faFaceSmileBeam } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faBolt, faArrowTrendUp, faFaceSmileBeam, faCoins, faComments } from '@fortawesome/free-solid-svg-icons';
 import { markdownify } from '@/lib/utils/textConverter';
 
 // Assuming a basic setup for icons
@@ -9,7 +9,9 @@ const iconMap = {
   bolt: faBolt,
   check: faCheckCircle,
   trend: faArrowTrendUp,
-  smile: faFaceSmileBeam
+  smile: faFaceSmileBeam,
+  coins: faCoins,
+  comments: faComments
 };
 
 // Define the props structure based on expected data
@@ -17,6 +19,8 @@ const iconMap = {
 interface Advantage {
   id: string;
   text: string;
+  description: string;
+  color: string;
   icon: keyof typeof iconMap;
 }
 
@@ -49,12 +53,16 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           {data.advantages.map((advantage, index) => (
             <div key={index} className="advantage-item">
               <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light text-center">
-                <FontAwesomeIcon icon={iconMap[advantage.icon]} size="2x" color="#B8860B" />
+                <FontAwesomeIcon icon={iconMap[advantage.icon]} size="2x" color={advantage.color} />
                 <div className="text-container ml-2 mt-4">
                   <h3
                     dangerouslySetInnerHTML={markdownify(advantage.text)}
                     className="h6 font-primary font-semibold items-center justify-center"
                   />
+                    <p
+                      dangerouslySetInnerHTML={markdownify(advantage.description)}
+                      className="text-sm text-gray-600 mt-1"
+                    />
                 </div>
               </div>
             </div>
@@ -81,6 +89,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           min-height: 100px; // Ensures all items are the same height
           justify-content: center;
           height: 150px; // This line will ensure all items stretch to the same height
+          
         }
         .rounded-lg {
           width: 100%;
@@ -90,6 +99,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           align-items: center;
           height: 100%; // This line makes the content use all available height
           background-color: #dbdbdb; // Use a CSS variable for theme color
+          border-radius: 30px;
         }
         .text-container {
           margin-top: 20px;

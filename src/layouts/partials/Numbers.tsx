@@ -22,6 +22,7 @@ interface Advantage {
   icon: keyof typeof iconMap;
   number: string;
   suffix: string;
+  color: string;
 }
 
 interface AdvantagesData {
@@ -95,7 +96,7 @@ const Numbers = ({ data }: { data: AdvantagesData }) => {
           margin-top: 20px;
         }
         .number-text {
-          color: #F39C12 !important!;
+          color: {advantage.color} !important!;
         }
       `}</style>
     </section>
