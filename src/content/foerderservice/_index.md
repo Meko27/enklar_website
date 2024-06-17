@@ -13,7 +13,7 @@ banner:
   button:
     enable: true
     label: "Jetzt kostenlos starten"
-    link: "/kontakt"
+    link: "https://go.enklar.de"
 # Features
 features:
   - title: "Digitalte Datenaufnahme über unser Webtool"
@@ -31,5 +31,5 @@ features:
     button:
       enable: false
       label: "Jetzt anfragen"
-      link: "/kontakt"
+      link: "https://go.enklar.de"
 ---
