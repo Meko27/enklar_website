@@ -90,16 +90,17 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
         </div>
         
         {/* Render the button if enabled */}  
- 
         {data.button && data.button.enable && (
+        <div className="button-container">
         <Link
-        className="btn btn-primary  hover:bg-teal-900 mt-5 ml-6"
+        className="btn btn-primary hover:bg-teal-900 mt-5"
         href={data.button.link}
         target={data.button.link.startsWith("http") ? "_blank" : "_self"}
         rel="noopener"
         >
         {data.button.label}
         </Link>
+        </div>
         )}
 
       </div>
@@ -219,6 +220,11 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           background-color: black;
           display: flex;
           align-items: center;
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
         }
         @media (max-width: 767px) {
           .row {
