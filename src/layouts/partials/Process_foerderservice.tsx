@@ -230,6 +230,26 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
             top: 100%;
             transform: translateX(-50%);
           }
+          .flip-card {
+            width: 90%; // Adjust width for mobile view
+            margin: 0 auto; // Center the card
+          }
+          .flip-card-inner {
+            height: 100%; // Maintain full height
+            transform: none; // Disable 3D transform
+            transition: none; // Disable transition
+          }
+          .flip-card-front, .flip-card-back {
+            position: relative;
+            height: auto; // Set height to auto
+            transform: none; // Disable 3D transform
+          }
+          .flip-card-back {
+            display: none; // Hide back side on mobile
+          }
+          .flip-card-front {
+            display: flex; // Ensure front side is displayed
+          }
         }
         @media (min-width: 768px) {
           .advantage-item {
