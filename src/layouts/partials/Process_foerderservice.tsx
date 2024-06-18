@@ -68,7 +68,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
 
                       {/* Title text container */}
                       <div className="title-container mt-2">
-                        <h3 dangerouslySetInnerHTML={markdownify(advantage.text)} className="h6 font-primary font-semibold text-white" />
+                        <h3 dangerouslySetInnerHTML={markdownify(advantage.text)} className="h6 font-primary font-semibold text-black" />
                       </div>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background-color: #016D5D; /* Use the provided background color */
+          background-color: #b2d8b2; /* Use the provided background color */
           border: 0px solid black; /* Adds a solid black line around the container */
           border-radius: 40px;
         }
@@ -174,7 +174,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           flex-direction: column;
           align-items: center;
           height: 100%; // This line makes the content use all available height
-          background-color: #016D5D; // Use the provided background color
+          background-color: #b2d8b2; // Use the provided background color
           border: 0px solid black; // Adds a solid black line around the container
           border-radius: 40px;
           position: relative; // Ensure number circle is positioned correctly
@@ -185,7 +185,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           left: -15px;
           width: 60px;
           height: 60px;
-          background-color: #00975f;
+          background-color: #ff6f61;
           color: white;
           border-radius: 50%;
           display: flex;
@@ -194,12 +194,12 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           font-size: 26px; // Ensure the number is visible
         }
         .icon-container {
-        color: white;
+        color: black;
           margin-top: 40px; // Adjusts the space between the number circle and icon
         }
         .title-container {
           width: 100%;  // Ensure text areas use full card width
-          color: white;
+          color: black;
           text-align: center;
           padding: 0 20px;
           margin-top: 10px;  // Spacing between elements

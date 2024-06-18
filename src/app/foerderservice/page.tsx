@@ -1,3 +1,4 @@
+import React from "react";
 import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Button, Feature } from "@/types";
@@ -5,6 +6,8 @@ import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
 import CallToAction from "@/partials/CallToAction";
+import Tabs from "@/shortcodes/Tabs"; 
+import Tab from "@/shortcodes/Tab";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
 import Image from 'next/image';
@@ -12,17 +15,22 @@ import Link from 'next/link';
 import Head from "next/head";
 import Advantages_therm from "@/partials/Advantages_therm";
 import Numbers from "@/partials/Numbers";
+import Overview_foerderung from "@/partials/Overview_foerderung";
+
+
 import Process_therm from "@/partials/Process_therm";
 import Process_foerderservice from "@/partials/Process_foerderservice";
 import Testimonials from "@/partials/Testimonials";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { FaCircle } from "react-icons/fa";
 
 const Foerderservice = async () => {
   const foerderservice = getListPage("foerderservice/_index.md");
   const { frontmatter: advantagesData } = getListPage("sections/advantages_foerderservice.md");
   const { frontmatter: numbersData } = getListPage("sections/numbers_foerderservice.md");
   const { frontmatter: processData } = getListPage("sections/process_foerderservice.md");
+  const { frontmatter: tabsContent } = getListPage("sections/overview_foerderung.md");
   const testimonialData = getListPage("sections/testimonial_therm.md");
   const callToActionData = getListPage("sections/call-to-action.md");
   const { frontmatter } = foerderservice;
@@ -64,11 +72,11 @@ const Foerderservice = async () => {
               <h1 className="mb-4 text-h3 lg:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center justify-center lg:justify-start">
-                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#B8860B" />
+                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#ff6f61" />
                   <span>Maximale Fördersumme sichern</span>
                 </li>
                 <li className="flex items-center justify-center lg:justify-start">
-                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#B8860B" />
+                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#ff6f61" />
                   <span>Garantiert schnelle Durchführung</span>
                 </li>
                 <li className="flex items-center justify-center lg:justify-start">
@@ -120,6 +128,16 @@ const Foerderservice = async () => {
               <div className={`md:col-7 lg:col-6 ${index % 2 !== 0 ? "md:order-1" : ""}`}>
                 <h2 className="mb-4" dangerouslySetInnerHTML={markdownify(feature.title)} />
                 <p className="mb-8 text-lg" dangerouslySetInnerHTML={markdownify(feature.content)} />
+                {feature.bulletpoints && (
+                  <ul>
+                    {feature.bulletpoints.map((bullet: string) => (
+                      <li className="relative mb-4 pl-6" key={bullet}>
+                        <FaCircle className={"absolute left-0 top-2 size-1.5"} style={{color: '#016D5D'}}/>
+                        <span dangerouslySetInnerHTML={markdownify(bullet)} />
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {feature.button && feature.button.enable && (
                   <Link
                     className="btn btn-primary"
@@ -136,10 +154,11 @@ const Foerderservice = async () => {
         </section>
       ))}
 
+      {/* Tabs Sections */}
+      <Overview_foerderung/>
+
       {/* CallToAction Sections */}
       <CallToAction data={callToActionData} />
-      
-
     </>
   );
 };

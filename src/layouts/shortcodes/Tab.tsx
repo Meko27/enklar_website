@@ -1,6 +1,11 @@
 "use client";
 
-function Tab({ children }: { children: React.ReactNode }) {
+interface TabProps {
+  children: React.ReactNode;
+  name: string; // Add the name prop here
+}
+
+function Tab({ children }: TabProps) {
   return <div className="tab-content-panel">{children}</div>;
 }
 
