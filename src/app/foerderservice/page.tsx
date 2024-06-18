@@ -15,7 +15,8 @@ import Link from 'next/link';
 import Head from "next/head";
 import Advantages_therm from "@/partials/Advantages_therm";
 import Numbers from "@/partials/Numbers";
-import Overview_foerderung from "@/partials/Overview_foerderung";
+import Examples_foerderung from "@/partials/Examples_foerderservice";
+import FAQ_foerderung from "@/partials/FAQ_foerderservice";
 
 
 import Process_therm from "@/partials/Process_therm";
@@ -155,7 +156,10 @@ const Foerderservice = async () => {
       ))}
 
       {/* Tabs Sections */}
-      <Overview_foerderung/>
+      <Examples_foerderung/>
+
+      {/* FAQ Sections */}
+      <FAQ_foerderung/>
 
       {/* CallToAction Sections */}
       <CallToAction data={callToActionData} />

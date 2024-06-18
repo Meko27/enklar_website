@@ -3,7 +3,7 @@ import Tabs from "@/shortcodes/Tabs";
 import Tab from "@/shortcodes/Tab";
 
 
-const Overview_foerderung: React.FC = () => {
+const Examples_foerderung: React.FC = () => {
     
 
     return (
@@ -29,4 +29,4 @@ const Overview_foerderung: React.FC = () => {
     );
 };
 
-export default Overview_foerderung;
+export default Examples_foerderung;
