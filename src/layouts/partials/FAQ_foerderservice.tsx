@@ -8,10 +8,13 @@ const FAQ_foerderung: React.FC = () => {
         <div className="mx-auto mb-12 text-center md:col-12 lg:col-12 xl:col-8">
           <h2 className="mb-12">Häufig gestellte Fragen</h2>
         </div>
-        <Accordion title="Wie funktioniert die Förderung für Einfamilienhäuser?">
-          <p>
-            Die Förderung für Einfamilienhäuser umfasst eine Vielzahl von Maßnahmen, darunter die Installation energieeffizienter Heizsysteme und die Dämmung von Gebäudehüllen. Eigentümer können Zuschüsse und zinsgünstige Kredite beantragen, um die Kosten dieser Maßnahmen zu decken.
-          </p>
+        <Accordion title="Wer ist berechtigt einen Antrag zu stellen?">
+          <p style={{ marginBottom: '16px' }}>Aktuell sind folgende Gruppen antragsberechtigt:</p>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginBottom: '16px' }}>
+            <li>Privatpersonen, die Eigentümer von bestehenden selbstbewohnten (Haupt- oder alleinige Wohnsitz) Einfamilienhäusern in Deutschland sind.</li>
+            <li>Privatpersonen, die Eigentümer von bestehenden Mehrfamilienhäusern (mit mehr als einer Wohneinheit) sind sowie Wohnungseigentümergemeinschaften (WEG) in Deutschland, sofern Maßnahmen am Gemeinschaftseigentum umgesetzt werden.</li>
+          </ul>
+          <p>Ab Ende August 2024 sind Privatpersonen antragsberechtigt, die Eigentümer von vermieteten oder nicht selbstgenutzen Einfamilienhäusern sowie Eigentumswohnungen in Wohnungs¬eigentümer¬gemein¬schaften in Deutsch¬land sind, sofern Maß¬nahmen am Sondereigentum umgesetzt werden</p>
         </Accordion>
         <Accordion title="Welche Fördermöglichkeiten gibt es für Mehrfamilienhäuser?">
           <p>
