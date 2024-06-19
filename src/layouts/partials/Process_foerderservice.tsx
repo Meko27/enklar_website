@@ -63,7 +63,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
 
                       {/* Icon container */}
                       <div className="icon-container">
-                        <FontAwesomeIcon icon={iconMap[advantage.icon]} size="3x" />
+                        <FontAwesomeIcon icon={iconMap[advantage.icon]} size="4x" />
                       </div>
 
                       {/* Title text container */}
@@ -117,19 +117,18 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
         }
         .advantage-item {
           flex: 1 1 20%;
-          margin: 10px;
+          margin: 5px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          min-height: 200px; // Ensures all items are the same height
+          min-height: 250px; // Ensures all items are the same height
           position: relative; // Required for absolute positioning of number-circle
         }
         .flip-card {
           background-color: transparent;
           width: 100%;
           height: 100%;
-          perspective: 1000px; /* Remove this if you don't want the 3D effect */
         }
         .flip-card-inner {
           position: relative;
@@ -195,7 +194,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
         }
         .icon-container {
         color: black;
-          margin-top: 40px; // Adjusts the space between the number circle and icon
+          margin-top: 50px; // Adjusts the space between the number circle and icon
         }
         .title-container {
           width: 100%;  // Ensure text areas use full card width

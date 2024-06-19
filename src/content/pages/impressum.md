@@ -1,6 +1,6 @@
 ---
 title: "Impressum"
-meta_title: ""
+meta_title: "Impressum"
 description: "Impressum"
 draft: false
 ---
