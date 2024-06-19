@@ -1,8 +1,8 @@
 ---
 meta_title: "Enklar Förderservice"
 enable: true
-title: "Ihre Vorteile"
-description: "Mit uns sparen Sie nicht nur Nerven sondern auch Geld."
+title: "Enklar Förderservice"
+description: "Jetzt bis zu 70% Heizungsförderung sichern."
 # Banner
 banner:
   title: "Die neue Heizung bis zu <span style='color: #016D5D;'>70%</span> fördern lassen mit dem <span style='color: #016D5D;'>Enklar Förderservice</span>"
