@@ -8,7 +8,7 @@ const Examples_foerderung: React.FC = () => {
       <div className="container">
         <div className="mx-auto mb-0 text-center md:col-12 lg:col-12 xl:col-8">
           <h2 className="mb-12">Förderbeispiele aus der Praxis</h2>
-          <p className="mb-12">Abhängig von der Anzahl der Wohneinheiten, kann es schonmal passieren den Überblick zu verlieren. Schauen Sie sich deshalb gerne die beiden Beispiele aus der Praxis an.</p>
+          <p className="mb-12">Schauen Sie sich gerne die beiden Beispiele aus der Praxis an, um die Heizungsförderung besser zu verstehen.</p>
         </div>
         <Tabs>
           <Tab name="Beispiel EFH">
