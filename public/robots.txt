@@ -1,6 +1,10 @@
 # *
 User-agent: *
-Allow: /
+Disallow: /datenschutzerklaerung
+
+# *
+User-agent: *
+Disallow: /impressum
 
 # Host
 Host: https://enklar.de

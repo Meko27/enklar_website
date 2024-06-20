@@ -1,8 +1,8 @@
 {
-  "name": "nextplate",
+  "name": "enklar",
   "version": "2.2.2",
-  "description": "Nextjs and Tailwindcss boilerplate",
-  "author": "zeon.studio",
+  "description": "Enklar Website",
+  "author": "Enklar",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {
