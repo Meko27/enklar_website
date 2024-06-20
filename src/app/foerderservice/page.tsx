@@ -89,20 +89,20 @@ const Foerderservice = async () => {
           <div className="row flex-col lg:flex-row items-center lg:items-start justify-between">
             <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
               <h1 className="mb-4 text-h3 lg:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center justify-center lg:justify-start">
-                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#ff6f61" />
-                  <span>Maximale Fördersumme sichern</span>
-                </li>
-                <li className="flex items-center justify-center lg:justify-start">
-                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#ff6f61" />
-                  <span>Garantiert schnelle Durchführung</span>
-                </li>
-                <li className="flex items-center justify-center lg:justify-start">
-                  <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2" color="#B8860B" />
-                  <span>Heizlastberechnung & BzA-Erstellung</span>
-                </li>
-              </ul>
+                <ul className="space-y-4 items-center justify-center mb-8">
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Maximale Fördersumme sichern</span>
+                  </li>
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Garantiert schnelle Durchführung</span>
+                  </li>
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Heizlastberechnung & BzA-Erstellung</span>
+                  </li>
+                </ul>
               {banner.button && banner.button.enable && (
                 <>
                 <Link
