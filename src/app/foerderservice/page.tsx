@@ -50,7 +50,7 @@ const Foerderservice = async () => {
   } = frontmatter;
 
   const GA_TRACKING_ID = 'G-THJP4GMD8G'
-  
+
   console.log("Banner Meta Title:", banner.meta_title); // Log to debug
 
   if (!banner.meta_title) {
@@ -70,7 +70,7 @@ const Foerderservice = async () => {
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
