@@ -62,6 +62,34 @@ export default function RootLayout({
           }&display=swap`}
           rel="stylesheet"
         />
+
+        {/* CookieYes and Google Analytics */}
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'regions': ['DE', 'EU]
+            });
+
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied'
+            });
+          `}
+        </script>
+        <Script 
+          id="cookieyes" type="text/javascript" 
+          src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" 
+          strategy="afterInteractive"
+        />
       </head>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -78,9 +106,7 @@ export default function RootLayout({
           });
         `}
       </Script>
-      <Script 
-          id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive">
-      </Script>
+      
       <body suppressHydrationWarning={true}>
         <TwSizeIndicator />
         <Providers>
