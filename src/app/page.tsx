@@ -10,6 +10,8 @@ import { FaCheck } from "react-icons/fa";
 import Head from "next/head";
 import Script from 'next/script';
 
+const GA_TRACKING_ID = 'G-THJP4GMD8G'
+
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const advantages = getListPage("sections/advantages.md")
@@ -29,6 +31,21 @@ const Home = () => {
          {/* favicon */}
          <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <Script 
           id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive">
       </Script>

@@ -6,6 +6,9 @@ import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
+import Script from 'next/script';
+
+const GA_TRACKING_ID = 'G-THJP4GMD8G'
 
 export default function RootLayout({
   children,
@@ -25,7 +28,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
-
+        
         {/* favicon */}
         <link rel="icon" href={config.site.favicon} />
         {/* theme meta */}
@@ -60,6 +63,21 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
 
       <body suppressHydrationWarning={true}>
         <TwSizeIndicator />
