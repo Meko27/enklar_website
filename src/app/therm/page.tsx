@@ -7,6 +7,7 @@ import PageHeader from "@/partials/PageHeader";
 import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import { RegularPage } from "@/types";
+import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from "next/head";
@@ -36,6 +37,8 @@ const Therm = async () => {
     features: Feature[];
   } = frontmatter;
 
+  const GA_TRACKING_ID = 'G-THJP4GMD8G'
+
   console.log("Banner Meta Title:", banner.meta_title); // Log to debug
 
   if (!banner.meta_title) {
@@ -51,6 +54,23 @@ const Therm = async () => {
         <meta name="description" content={banner.description} />
         <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
+
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
       <SeoMeta title={banner.title} description={banner.description} image={banner.image} />
 
       {/* Banner Section */}
