@@ -28,7 +28,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FaCircle } from "react-icons/fa";
 
 const Foerderservice = async () => {
-  const foerderservice = getListPage("foerderservice/_index.md");
+  const foerderservice = getListPage("foerderservice_lp/_index.md");
   const { frontmatter: advantagesData } = getListPage("sections/advantages_foerderservice.md");
   const { frontmatter: numbersData } = getListPage("sections/numbers_foerderservice.md");
   const { frontmatter: processData } = getListPage("sections/process_foerderservice.md");
@@ -66,6 +66,7 @@ const Foerderservice = async () => {
         <meta name="description" content={banner.description} />
         <link rel="shortcut icon" href={config.site.favicon} />
       </Head>
+      <Script src="https://static.heyflow.com/widget/latest/webview.js"></Script>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         strategy="afterInteractive"
@@ -84,47 +85,70 @@ const Foerderservice = async () => {
       <SeoMeta title={banner.title} description={banner.description} image={banner.image} />
 
       {/* Banner Section */}
-      <section className="section pt-14 pb-12">
-        <div className="container">
-          <div className="row flex-col lg:flex-row items-center lg:items-start justify-between">
-            <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
-              <h1 className="mb-4 text-h3 lg:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />
-                <ul className="space-y-4 items-center justify-center mb-8">
-                  <li className="flex items-center lg:justify-start">
+      <section className="relative section pt-14 pb-12 mb-12">
+        <div className="absolute inset-0 h-2/3 lg:w-full w-auto">
+          <Image 
+            src={banner.image} 
+            className="w-auto lg:w-full" 
+            alt="banner image" 
+            priority 
+            layout="fill" 
+          />
+        </div>
+        <div 
+          className="absolute inset-0 bg-black opacity-50 h-2/3">
+        </div>
+        
+        <div className="container relative z-10">
+          <div className="flex justify-center">
+            <div className="row w-full lg:w-4/5 items-center lg:items-center justify-center">
+              <div className="w-auto lg:w-3/4 mb-2 text-center lg:text-left text-white relative">
+                <div className="relative top-0 w-auto lg:w-2/4 bg-[#FF8C69] text-white py-1 px-2 rounded mb-4">
+                    Ihr Förderantrag in wenigen Minuten
+                </div>
+                <h1 
+                className="mb-4 text-h3 lg:text-h2 lg:mx-auto text-white" dangerouslySetInnerHTML={markdownify(banner.title)} 
+                />
+                <ul className="flex justify-center lg:justify-center space-x-4 space-y-4 lg:space-y-0 mb-8">
+                  <li className="flex items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
-                    <span>Maximale Fördersumme sichern</span>
+                    <span>Maximale Fördersumme</span>
                   </li>
-                  <li className="flex items-center lg:justify-start">
+                  <li className="flex items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
-                    <span>Garantiert schnelle Durchführung</span>
+                    <span>Schnelle Durchführung</span>
                   </li>
-                  <li className="flex items-center lg:justify-start">
+                  <li className="flex items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
                     <span>Heizlastberechnung & BzA-Erstellung</span>
                   </li>
                 </ul>
-              {banner.button && banner.button.enable && (
-                <>
-                <Link
-                  className="btn btn-primary text-lg px-12 py-4 hover:bg-teal-900"
-                  href={banner.button.link}
-                  target={banner.button.link.startsWith("http") ? "_blank" : "_self"}
-                  rel="noopener"
-                >
-                  {banner.button.label}
-                </Link>
-                <p className="text-sm text-gray-400 mt-2">kostenlos & unverbindlich</p>
-                </>
-              )}
-            </div>
-            <div className="lg:w-1/2">
-              <Image src={banner.image} className="mx-auto rounded-lg" width={600} height={300} alt="banner image" priority />
+              </div>
+              <div className="lg:w-1/4 flex flex-col items-center lg:items-end">
+                <Image 
+                  src="/images/eee_logo.png" 
+                  alt="certificate icon" 
+                  width={200} 
+                  height={200} 
+                  className="mb-4 lg:mb-2"
+                />
+                <Image 
+                  src="/images/certificate.png" 
+                  alt="certificate icon" 
+                  width={200} 
+                  height={200} 
+                  className="mb-4 lg:mb-2"
+                />
+              </div>
             </div>
           </div>
+
+          <div className="mt-1 flex justify-center">
+            <heyflow-wrapper flow-id="heizungstausch_embed" dynamic-height style-config='{"width": "1000px"}'></heyflow-wrapper>
+          </div>
+
         </div>
       </section>
-
-      
 
       {/* Advantage Sections */}
       <Advantages_therm data={advantagesData} />
