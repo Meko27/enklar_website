@@ -17,7 +17,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="mb-28">
           <div className="container">
-            <div className="rounded-xl px-4 py-16 dark:bg-darkmode-theme-light xl:p-20" style={{ backgroundColor: '#dbdbdb'}}>
+            <div className="rounded-xl px-4 py-16 dark:bg-darkmode-theme-light xl:p-20" style={{ backgroundColor: '#87CEFA'}}>
               <div className="row items-center justify-between">
 
                 <div className="md:col-7 md:order-1">
@@ -35,7 +35,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
                   />
 
                   <div className="partner-logo items-left">
-                    <Image src="/images/EE_EnergieeffizienzExperten_Logo_m.png" alt="Expertenlogo" width={200} height={100} />
+                    <Image src="/images/eee_logo.png" alt="Expertenlogo" width={200} height={100} />
                   </div>
                   
                   {data.frontmatter.button.enable && (

@@ -70,8 +70,8 @@ const Numbers = ({ data }: { data: AdvantagesData }) => {
           justify-content: center;
           gap: 1px;
           flex-wrap: wrap;
-          background-color: #dbdbdb;
-          border-radius: 8px;
+          background-color: #B2D8B2; /* Set Background Color*/
+          border-radius: 30px;
         }
         .advantage-item {
           flex: 1 1 20%;
@@ -114,7 +114,7 @@ const AdvantageItem = ({ advantage }: { advantage: Advantage }) => {
   return (
     <div ref={ref} className="advantage-item">
       <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light text-center">
-        <h2 className="h1 font-primary font-semibold items-center justify-center number-text"  style={{ color: '#B8860B' }}>
+        <h2 className="h1 font-primary font-semibold items-center justify-center number-text"  style={{ color: 'black' }}>
           {inView && (
             <CountUp
               end={parseInt(advantage.number, 10)}

@@ -37,10 +37,10 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
     <section className="section pt-1">
       <div className="container">
         <div className="row">
-          <div className="mx-auto mb-4 mt-12 text-center md:col-10 lg:col-8 xl:col-6">
+          <div className="mx-auto mb-12 mt-12 text-center md:col-10 lg:col-8 xl:col-6">
             <h2
               dangerouslySetInnerHTML={markdownify(data.title)}
-              className="mb-2"
+              className="mb-4"
             />
             <p
               dangerouslySetInnerHTML={markdownify(
@@ -75,7 +75,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
                   <div className="flip-card-back">
                     {/* Description text container */}
                     <div className="description-container mt-1">
-                      <p dangerouslySetInnerHTML={markdownify(advantage.description_card)} className="text-sm font-light text-white" />
+                      <p dangerouslySetInnerHTML={markdownify(advantage.description_card)} className="text-sm font-light text-black" />
                     </div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background-color: #b2d8b2; /* Use the provided background color */
+          background-color: #AEC6CF; /* Use the provided background color */
           border: 0px solid black; /* Adds a solid black line around the container */
           border-radius: 40px;
         }
@@ -162,7 +162,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background-color: #00ab92; /* Use the provided background color */
+          background-color: #AEC6CF; /* Use the provided background color */
           border: 0px solid black; /* Adds a solid black line around the container */
           border-radius: 40px;
           transform: rotateY(180deg);
@@ -173,7 +173,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
           flex-direction: column;
           align-items: center;
           height: 100%; // This line makes the content use all available height
-          background-color: #b2d8b2; // Use the provided background color
+          background-color: #AEC6CF; // Use the provided background color
           border: 0px solid black; // Adds a solid black line around the container
           border-radius: 40px;
           position: relative; // Ensure number circle is positioned correctly
@@ -205,7 +205,7 @@ const Process_therm = ({ data }: { data: AdvantagesData }) => {
         }
         .description-container {
           width: 100%;  // Ensure text areas use full card width
-          color: white;
+          color: black;
           text-align: center;
           padding: 0 20px;
           margin-top: 10px;  // Spacing between elements

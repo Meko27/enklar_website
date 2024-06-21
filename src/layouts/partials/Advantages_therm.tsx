@@ -38,7 +38,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
     <section className="section pt-1">
       <div className="container">
         <div className="row">
-        <div className="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+        <div className="mx-auto mt-12 mb-12 text-center md:col-10 lg:col-8 xl:col-6">
                 <h2
                   dangerouslySetInnerHTML={markdownify(data.title)}
                   className="mb-2"
@@ -57,7 +57,7 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
                 <div className="text-container ml-2 mt-4">
                   <h3
                     dangerouslySetInnerHTML={markdownify(advantage.text)}
-                    className="h6 font-primary font-semibold items-center justify-center"
+                    className="h5 font-primary font-semibold items-center justify-center"
                   />
                     <p
                       dangerouslySetInnerHTML={markdownify(advantage.description)}
@@ -86,9 +86,9 @@ const Advantages_therm = ({ data }: { data: AdvantagesData }) => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          min-height: 100px; // Ensures all items are the same height
+          min-height: 200px; // Ensures all items are the same height
           justify-content: center;
-          height: 150px; // This line will ensure all items stretch to the same height
+          height: 200px; // This line will ensure all items stretch to the same height
           
         }
         .rounded-lg {

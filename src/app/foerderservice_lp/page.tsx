@@ -85,18 +85,19 @@ const Foerderservice = async () => {
       <SeoMeta title={banner.title} description={banner.description} image={banner.image} />
 
       {/* Banner Section */}
-      <section className="relative section pt-14 pb-12 mb-12">
-        <div className="absolute inset-0 h-2/3 lg:w-full w-auto">
+      <section className="relative section pt-8 pb-12 mb-12">
+        <div className="absolute inset-0 h-auto lg:w-full w-full">
           <Image 
             src={banner.image} 
-            className="w-auto lg:w-full" 
+            className="w-auto lg:w-auto" 
             alt="banner image" 
             priority 
+            objectFit="fill" 
             layout="fill" 
           />
         </div>
         <div 
-          className="absolute inset-0 bg-black opacity-50 h-2/3">
+          className="absolute inset-0 bg-black opacity-50 h-auto">
         </div>
         
         <div className="container relative z-10">
@@ -160,23 +161,23 @@ const Foerderservice = async () => {
       <Process_foerderservice data={processData}/>
 
       {/* Testimonial Sections */}
-      <Testimonials data={testimonialData} />
+      <Testimonials data={testimonialData}/>
 
       {/* Additional Sections */}
       {features.map((feature, index) => (
         <section key={index} className={`section-sm ${index % 2 === 0 ? "bg-gradient" : ""}`}>
-          <div className="container">
+          <div className="container mb-0 mt-0">
             <div className="row items-center justify-between">
               <div className={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 ? "md:order-2" : ""}`}>
                 <ImageFallback src={feature.image} height={480} width={520} alt={feature.title} className="rounded-lg" />
               </div>
               <div className={`md:col-7 lg:col-6 ${index % 2 !== 0 ? "md:order-1" : ""}`}>
-                <h2 className="mb-4" dangerouslySetInnerHTML={markdownify(feature.title)} />
-                <p className="mb-8 text-lg" dangerouslySetInnerHTML={markdownify(feature.content)} />
+                <h2 className="mb-2" dangerouslySetInnerHTML={markdownify(feature.title)} />
+                <p className="mb-4 text-lg" dangerouslySetInnerHTML={markdownify(feature.content)} />
                 {feature.bulletpoints && (
                   <ul>
                     {feature.bulletpoints.map((bullet: string) => (
-                      <li className="relative mb-4 pl-6" key={bullet}>
+                      <li className="relative mb-3 pl-6" key={bullet}>
                         <FaCircle className={"absolute left-0 top-2 size-1.5"} style={{color: '#016D5D'}}/>
                         <span dangerouslySetInnerHTML={markdownify(bullet)} />
                       </li>
@@ -200,13 +201,13 @@ const Foerderservice = async () => {
       ))}
 
       {/* Tabs Sections */}
-      <Examples_foerderung/>
+      <div className="mb-0"><Examples_foerderung/></div>
 
       {/* FAQ Sections */}
-      <FAQ_foerderung/>
+      <div className="mb-0"><FAQ_foerderung/></div>
 
       {/* CallToAction Sections */}
-      <CallToAction data={callToActionData} />
+      <div className="mb-0"><CallToAction data={callToActionData} /></div>
     </>
   );
 };

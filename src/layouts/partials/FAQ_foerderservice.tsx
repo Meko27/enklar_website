@@ -5,8 +5,8 @@ const FAQ_foerderung: React.FC = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="mx-auto mb-12 text-center md:col-12 lg:col-12 xl:col-8">
-          <h2 className="mb-12">Häufig gestellte Fragen</h2>
+        <div className="mx-auto mb-8 text-center md:col-12 lg:col-12 xl:col-8">
+          <h2 className="mb-8">Häufig gestellte Fragen</h2>
         </div>
 
         <Accordion title="Warum ist eine Heizlastberechnung wichtig?">

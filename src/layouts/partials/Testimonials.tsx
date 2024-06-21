@@ -59,7 +59,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Testimonial, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light" style={{ backgroundColor: '#dbdbdb', height: '350px'}}>
+                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light" style={{ backgroundColor: '#B2D8B2', height: '350px'}}>
                           <div className="text-dark dark:text-white">
                             <svg
                               width="33"
