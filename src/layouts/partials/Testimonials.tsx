@@ -59,7 +59,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Testimonial, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light" style={{ backgroundColor: '#B2D8B2', height: '350px'}}>
+                        <div className="rounded-lg px-7 py-10 dark:bg-darkmode-theme-light flex flex-col" style={{ backgroundColor: '#B2D8B2', height: '350px'}}>
                           <div className="text-dark dark:text-white">
                             <svg
                               width="33"
@@ -78,7 +78,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                             className="mt-8"
                             dangerouslySetInnerHTML={markdownify(item.content)}
                           />
-                          <div className="mt-11 flex items-center">
+                          <div className="flex items-center mt-auto">
                             <div className="text-dark dark:text-white">
                               <ImageFallback
                                 height={50}

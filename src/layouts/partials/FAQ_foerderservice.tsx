@@ -10,12 +10,11 @@ const FAQ_foerderung: React.FC = () => {
         </div>
 
         <Accordion title="Warum ist eine Heizlastberechnung wichtig?">
-        <p style={{ marginBottom: '16px' }}>Eine Heizlastberechnung wird durchgeführt, um die benötigte Wärmeleistung für ein Gebäude zu bestimmen, damit eine angemessene und effiziente Heizungsanlage ausgewählt und dimensioniert werden kann. Die Hauptgründe für eine Heizlastberechnung sind:</p>
+        <p style={{ marginBottom: '16px' }}>Eine Heizlastberechnung ist für die Förderung durch die KfW zwingend erforderlich. Folgende Aspekte deckt die Heizlast ab.</p>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginBottom: '16px' }}>
-            <li>Energieeffizienz: Um sicherzustellen, dass das Heizsystem effizient arbeitet und nicht mehr Energie verbraucht, als notwendig ist. Eine überdimensionierte Anlage wäre ineffizient und würde unnötig hohe Betriebskosten verursachen.</li>
+            <li>Energieeffizienz: Die neue Heizung sollte weder über- noch unterdimensioniert werden. Die Heizalst bestimmt die notwendige Leistung der neuen Heizung.</li>
+            <li>Kostensenkung: Um die Investitions- und Betriebskosten zu optimieren. Eine präzise Berechnung hilft dabei, die richtige Größe der Heizungsanlage zu bestimmen, was sowohl die Anschaffungs- als auch die Betriebskosten reduziert.</li>
             <li>Komfort: Um ein angenehmes Raumklima zu gewährleisten, indem die Heizungsanlage die Räume gleichmäßig und ausreichend beheizt.</li>
-            <li>Kostenoptimierung: Um die Investitions- und Betriebskosten zu optimieren. Eine präzise Berechnung hilft dabei, die richtige Größe der Heizungsanlage zu bestimmen, was sowohl die Anschaffungs- als auch die Betriebskosten reduziert.</li>
-            <li>Normgerechte Auslegung: Um sicherzustellen, dass die Heizungsanlage den geltenden Normen und Vorschriften entspricht, wie zum Beispiel der DIN EN 12831 in Europa.</li>
           </ul>
         </Accordion>
 

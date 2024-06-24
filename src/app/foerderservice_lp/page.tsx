@@ -15,8 +15,6 @@ import Numbers from "@/partials/Numbers";
 import Examples_foerderung from "@/partials/Examples_foerderservice";
 import FAQ_foerderung from "@/partials/FAQ_foerderservice";
 
-
-import Process_therm from "@/partials/Process_therm";
 import Process_foerderservice from "@/partials/Process_foerderservice";
 import Testimonials from "@/partials/Testimonials";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -29,7 +27,7 @@ const Foerderservice = async () => {
   const { frontmatter: numbersData } = getListPage("sections/numbers_foerderservice.md");
   const { frontmatter: processData } = getListPage("sections/process_foerderservice.md");
   const { frontmatter: tabsContent } = getListPage("sections/overview_foerderung.md");
-  const testimonialData = getListPage("sections/testimonial_therm.md");
+  const testimonialData = getListPage("sections/testimonial_foerderservice.md");
   const callToActionData = getListPage("sections/call-to-action_foerderservice.md");
   const { frontmatter } = foerderservice;
   const { banner, features }: {
@@ -107,7 +105,7 @@ const Foerderservice = async () => {
                 className="mb-4 text-h3 lg:text-h2 lg:mx-auto text-white" dangerouslySetInnerHTML={markdownify(banner.title)} 
                 />
                 <ul className="flex justify-center lg:justify-center space-x-4 space-y-4 lg:space-y-0 mb-8">
-                  <li className="flex items-center">
+                  <li className="flex text-h6 items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
                     <span>Maximale Fördersumme</span>
                   </li>
@@ -169,13 +167,13 @@ const Foerderservice = async () => {
               </div>
               <div className={`md:col-7 lg:col-6 ${index % 2 !== 0 ? "md:order-1" : ""}`}>
                 <h2 className="mb-2" dangerouslySetInnerHTML={markdownify(feature.title)} />
-                <p className="mb-4 text-lg" dangerouslySetInnerHTML={markdownify(feature.content)} />
+                <p className="mb-4 text-h5" dangerouslySetInnerHTML={markdownify(feature.content)} />
                 {feature.bulletpoints && (
                   <ul>
                     {feature.bulletpoints.map((bullet: string) => (
                       <li className="relative mb-3 pl-6" key={bullet}>
                         <FaCircle className={"absolute left-0 top-2 size-1.5"} style={{color: '#016D5D'}}/>
-                        <span dangerouslySetInnerHTML={markdownify(bullet)} />
+                        <span className="text-h6" dangerouslySetInnerHTML={markdownify(bullet)} />
                       </li>
                     ))}
                   </ul>

@@ -33,7 +33,7 @@ const Foerderservice = async () => {
   const { frontmatter: numbersData } = getListPage("sections/numbers_foerderservice.md");
   const { frontmatter: processData } = getListPage("sections/process_foerderservice.md");
   const { frontmatter: tabsContent } = getListPage("sections/overview_foerderung.md");
-  const testimonialData = getListPage("sections/testimonial_therm.md");
+  const testimonialData = getListPage("sections/testimonial_foerderservice.md");
   const callToActionData = getListPage("sections/call-to-action_foerderservice.md");
   const { frontmatter } = foerderservice;
   const { banner, features }: {

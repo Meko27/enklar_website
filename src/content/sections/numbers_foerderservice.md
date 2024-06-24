@@ -14,7 +14,7 @@ advantages:
   - id: "2"
     text: "Fördersumme bereits für unsere Kunden beantragt<br />"
     icon: "check"
-    number: "1200000"
+    number: "1890000"
     suffix: "€"
     color: "#016D5D"
   - id: "3"
