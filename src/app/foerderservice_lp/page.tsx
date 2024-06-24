@@ -4,13 +4,9 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { Button, Feature } from "@/types";
 import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser";
-import PageHeader from "@/partials/PageHeader";
 import CallToAction from "@/partials/CallToAction_foerderservice";
-import Tabs from "@/shortcodes/Tabs"; 
-import Tab from "@/shortcodes/Tab";
 import SeoMeta from "@/partials/SeoMeta";
 import Script from 'next/script';
-import { RegularPage } from "@/types";
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from "next/head";
@@ -86,20 +82,18 @@ const Foerderservice = async () => {
 
       {/* Banner Section */}
       <section className="relative section pt-8 pb-12 mb-12">
-        <div className="absolute inset-0 h-auto lg:w-full w-full">
+        <div className="banner">
           <Image 
-            src={banner.image} 
-            className="w-auto lg:w-auto" 
+            src={banner.image}
             alt="banner image" 
             priority 
-            objectFit="fill" 
+            objectFit="cover" 
             layout="fill" 
           />
         </div>
-        <div 
-          className="absolute inset-0 bg-black opacity-50 h-auto">
-        </div>
         
+        <div className="overlay"></div>
+
         <div className="container relative z-10">
           <div className="flex justify-center">
             <div className="row w-full lg:w-4/5 items-center lg:items-center justify-center">
@@ -149,6 +143,25 @@ const Foerderservice = async () => {
           </div>
 
         </div>
+        <style jsx>{`
+          .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust as necessary */
+            overflow: hidden;
+          }
+          .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+          }
+
+          @media (max-width: 768px) {
+            .banner {
+              height: 10vh; /* Adjust as necessary */
+            }
+          }
+        `}</style>
       </section>
 
       {/* Advantage Sections */}
