@@ -82,17 +82,19 @@ const Foerderservice = async () => {
 
       {/* Banner Section */}
       <section className="relative section pt-8 pb-12 mb-12">
-        <div className="banner">
+      <div className="absolute inset-0 h-auto lg:w-full w-full">
           <Image 
-            src={banner.image}
+            src={banner.image} 
+            className="w-1 lg:w-1 h-auto" 
             alt="banner image" 
             priority 
             objectFit="cover" 
             layout="fill" 
           />
         </div>
-        
-        <div className="overlay"></div>
+        <div 
+          className="overlay absolute inset-0 bg-black opacity-60 h-auto">
+        </div>
 
         <div className="container relative z-10">
           <div className="flex justify-center">
@@ -143,25 +145,6 @@ const Foerderservice = async () => {
           </div>
 
         </div>
-        <style jsx>{`
-          .banner {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Adjust as necessary */
-            overflow: hidden;
-          }
-          .overlay {
-            position: absolute;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-          }
-
-          @media (max-width: 768px) {
-            .banner {
-              height: 10vh; /* Adjust as necessary */
-            }
-          }
-        `}</style>
       </section>
 
       {/* Advantage Sections */}
