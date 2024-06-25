@@ -65,6 +65,11 @@ module.exports = {
           "theme-light": theme.colors.darkmode.theme_color.theme_light,
           "theme-dark": theme.colors.darkmode.theme_color.theme_dark,
         },
+        'cd-green-dark': '#016D5D',
+        'cd-green-light': '#B2D8B2',
+        'cd-blue': '#87CEFA',
+        'cd-gray': '#AEC6CF',
+        'cd-red': '#FF8C69'
       },
       fontSize: {
         base: font_base + "px",

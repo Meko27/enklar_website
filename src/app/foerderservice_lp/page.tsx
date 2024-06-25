@@ -98,8 +98,8 @@ const Foerderservice = async () => {
           <div className="flex justify-center">
             <div className="row w-full lg:w-4/5 items-center lg:items-center justify-center">
               <div className="w-auto lg:w-3/4 mb-2 text-center lg:text-left text-white relative">
-                <div className="relative top-0 w-auto lg:w-2/4 bg-[#FF8C69] text-white py-1 px-2 rounded mb-4">
-                    Ihr Förderantrag in wenigen Minuten
+                <div className="relative top-0 w-auto lg:w-3/5 bg-[#FF8C69] text-white py-1 px-2 rounded mb-4">
+                    Ihr Förderantrag rechtssicher & in wenigen Minuten
                 </div>
                 <h1 
                 className="mb-4 text-h3 lg:text-h2 lg:mx-auto text-white" dangerouslySetInnerHTML={markdownify(banner.title)} 
@@ -111,7 +111,7 @@ const Foerderservice = async () => {
                   </li>
                   <li className="flex items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
-                    <span>Schnelle Durchführung</span>
+                    <span>Rechtssichere Einreichung</span>
                   </li>
                   <li className="flex items-center">
                     <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
