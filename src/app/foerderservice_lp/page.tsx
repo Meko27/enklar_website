@@ -139,7 +139,7 @@ const Foerderservice = async () => {
           </div>
 
           <div className="mt-1 flex justify-center">
-            <heyflow-wrapper flow-id="lp-heizungstausch" style-config='{"width": "1000px", "height": "600px"}'></heyflow-wrapper>
+            <heyflow-wrapper flow-id="lp-heizungstausch" style-config='{"width": "800px", "height": "700px"}'></heyflow-wrapper>
           </div>
 
         </div>
