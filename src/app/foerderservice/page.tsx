@@ -86,8 +86,11 @@ const Foerderservice = async () => {
       {/* Banner Section */}
       <section className="section pt-14 pb-12">
         <div className="container">
+
           <div className="row flex-col lg:flex-row items-center lg:items-start justify-between">
+
             <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
+            
               <h1 className="mb-4 text-h3 lg:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />
                 <ul className="space-y-4 items-center justify-center mb-8">
                   <li className="flex items-center lg:justify-start">
@@ -103,7 +106,7 @@ const Foerderservice = async () => {
                     <span>Heizlastberechnung & BzA-Erstellung</span>
                   </li>
                 </ul>
-              {banner.button && banner.button.enable && (
+                {banner.button && banner.button.enable && (
                 <>
                 <Link
                   className="btn btn-primary text-lg px-12 py-4 hover:bg-teal-900"

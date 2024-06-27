@@ -9,6 +9,21 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 import Head from "next/head";
 import Script from 'next/script';
+import React from "react";
+import PageHeader from "@/partials/PageHeader";
+import CallToAction from "@/partials/CallToAction";
+import Tabs from "@/shortcodes/Tabs"; 
+import Tab from "@/shortcodes/Tab";
+import { RegularPage } from "@/types";
+import Image from 'next/image';
+import Advantages_therm from "@/partials/Advantages_therm";
+import Numbers from "@/partials/Numbers";
+import Examples_foerderung from "@/partials/Examples_foerderservice";
+import FAQ_foerderung from "@/partials/FAQ_foerderservice";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { FaCircle } from "react-icons/fa";
 
 const GA_TRACKING_ID = 'G-THJP4GMD8G'
 
@@ -50,24 +65,31 @@ const Home = () => {
           id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/cb78db5a365ffbf4f2d14700/script.js" strategy="afterInteractive">
       </Script>
       <SeoMeta />
-      <section className="section pt-14">
+      <section className="section pt-14 pb-28">
         <div className="container">
-          <div className="row justify-center">
-            <div className="lg:col-7 md:col-9 mb-8 text-center rounded-lg">
-              <h1
-                className="mb-4 text-h3 lg:text-h1"
-                dangerouslySetInnerHTML={markdownify(banner.title, true, [
-                                                                  { word: "energetische", color: "#016D5D" },
-                                                                  { word: "Sanierung", color: "#016D5D" }
-                ])}
-              />
-              <p
-                className="mb-8"
-                dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
-              />
+
+          <div className="row flex-col lg:flex-row items-center lg:items-start justify-between">
+
+            <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
+              <h1 className="mb-4 text-h3 lg:text-h1" dangerouslySetInnerHTML={markdownify(banner.title)} />
+                <ul className="space-y-4 items-center justify-center mb-8">
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Förderservice</span>
+                  </li>
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Energieberatung</span>
+                  </li>
+                  <li className="flex items-center lg:justify-start">
+                    <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 mr-2 left-0" color="#87CEFA" />
+                    <span>Portfolioanalyse</span>
+                  </li>
+                </ul>
               {banner.button!.enable && (
+                <>
                 <Link
-                  className="btn btn-primary"
+                  className="btn btn-primary text-lg px-12 py-4 hover:bg-teal-900"
                   href={banner.button!.link}
                   target={
                     banner.button!.link.startsWith("http") ? "_blank" : "_self"
@@ -76,8 +98,10 @@ const Home = () => {
                 >
                   {banner.button!.label}
                 </Link>
+                </>
               )}
             </div>
+            <div className="lg:w-1/2" >
             {banner.image && (
               <div className="col-12 rounded-lg">
                 <ImageFallback
@@ -90,6 +114,8 @@ const Home = () => {
                 />
               </div>
             )}
+            </div>
+            
           </div>
         </div>
       </section>
