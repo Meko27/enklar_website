@@ -5,7 +5,7 @@ import { Button, Feature } from "@/types";
 import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
-import CallToAction from "@/partials/CallToAction";
+import CallToAction from "@/partials/CallToAction_foerderservice";
 import Tabs from "@/shortcodes/Tabs"; 
 import Tab from "@/shortcodes/Tab";
 import SeoMeta from "@/partials/SeoMeta";
