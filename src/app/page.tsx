@@ -3,7 +3,6 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import config from "@/config/config.json";
-import Advantages from "@/partials/Advantages";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
@@ -16,7 +15,7 @@ import Tabs from "@/shortcodes/Tabs";
 import Tab from "@/shortcodes/Tab";
 import { RegularPage } from "@/types";
 import Image from 'next/image';
-import Advantages_therm from "@/partials/Advantages_therm";
+import Advantages from "@/partials/Advantages_home";
 import Numbers from "@/partials/Numbers";
 import Examples_foerderung from "@/partials/Examples_foerderservice";
 import FAQ_foerderung from "@/partials/FAQ_foerderservice";
@@ -29,7 +28,7 @@ const GA_TRACKING_ID = 'G-THJP4GMD8G'
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
-  const advantages = getListPage("sections/advantages.md")
+  const { frontmatter: advantages} = getListPage("sections/advantages.md")
   const { frontmatter } = homepage;
   const {
     banner,

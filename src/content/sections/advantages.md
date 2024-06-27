@@ -1,23 +1,28 @@
 ---
 enable: true
-title: "Ihre Vorteile🚀"
-description: "Mit uns sparen Sie nicht nur Nerven sondern auch Geld."
+title: "Ihre Vorteile auf einem Blick🚀"
+description: ""
 
 # Testimonials
-testimonials:
-  - name: "**Schnelle Durchführung**"
-    designation: "Kein langes Warten mehr. Innerhalb von 2 Wochen kommt ein Experte zur Datenaufnahme zu Ihnen nach Hause."
-    icon: "bolt"
-    content: ""
-
-  - name: "**Unabhängige Beratung**"
-    designation: "Verlassen Sie sich auf eine komplett unabhängige auf Ihre Situation abgestimmte Beratung durch unsere Experten."
-    icon: "handshake"
-    content: ""
-
-  - name: "**Förderungen sichern**"
-    designation: "Wir kümmern uns um die maximale Förderung für Sie - ganz gleich ob iSFP, BAFA, KfW oder lokale Förderungen."
+advantages:
+  - id: "1"
+    text: "Maximale Förderung sichern"
+    description: "Ob KfW oder BAFA Förderung. Durch unseren Förderservice sichern Sie sich die maximale Förderung"
     icon: "piggybank"
-    content: ""
-
+    color: "#016D5D"
+  - id: "2"
+    text: "Unabhängige Beratung"
+    description: "Verlassen Sie sich auf unabhängige Beratung von zertifizierten Energeieffizienz-Experten"
+    icon: "handshake"
+    color: "#016D5D"
+  - id: "3"
+    text: "Deutschlandweiter Service"
+    description: "Durch unser großes Partnernetzwerk sind wir überall für Sie verfügbar"
+    icon: "trend"
+    color: "#016D5D"
+  - id: "4"
+    text: "Schnelle Durchführung"
+    description: "Kein langes Warten für Sie. Wir kümmern uns transparent & schnell um Ihr Anliegen"
+    icon: "bolt"
+    color: "#016D5D"
 ---

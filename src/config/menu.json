@@ -1,6 +1,14 @@
 {
   "main": [
     {
+      "name": "Förderservice",
+      "url": "/foerderservice"
+    },
+    {
+      "name": "Für Heizungsinstallateure",
+      "url": "/therm"
+    },
+    {
       "name": "Kontakt",
       "url": "/kontakt"
     },

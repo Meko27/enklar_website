@@ -11,43 +11,41 @@ banner:
 
 # Features
 features:
-  - title: "Energieberatung"
+  - title: "Förderservice KfW & BAFA"
+    image: "/images/foerderservice.png"
+    content: "Ob Heizungstausch, Einzelmaßnahme oder Gesamtsanierung. Durch unseren Förderservice können Sie Ihre KfW & BAFA Förderung bequem vom Sofa aus beantragen."
+    bulletpoints:
+      - "Intuitiver & schneller Förderservice für Ihre maximale Einsparung"
+      - "Beim Heizungstausch: Berechnung der Heizlast nach DIN EN 12831 & BzA Erstellung für Ihren Förderantrag"
+      - "Beratung & Verfügbarkeit zu Fragen rund um den Förderprozess"
+    button:
+      enable: true
+      label: "Förderung kostenlos prüfen"
+      link: "https://go.enklar.de"
+
+  - title: "Energieberatung & iSFP"
     image: "/images/energieberatung.png"
     content: "Profitieren Sie von unserer maßgeschneiderten Energieberatung, um Ihre Immobilie energetisch zu analysieren und Energie- sowie Kosteneinsparung durch eine erhöhte Energieeffizienz zu realisieren."
     bulletpoints:
-      - "**Vor-Ort** Analyse bei Ihnen Zuhause"
-      - "Umfangreiche Energieberatung"
-      - "Auf Ihre Sitation und Ziele abgestimmter **Sanierungsfahrplan**"
-      - "**5% Bonus-Förderung** auf Umsetzung einzelner Maßnahmen sichern"
+      - "**5% Bonus-Förderung** auf Umsetzung einzelner Maßnahmen sichern mit dem iSFP"
+      - "**Innerhalb von 2 Wochen** zum fertigen iSFP"
+      - "Einfache intuitive Datenaufnahme über unser Tool"
     button:
       enable: true
-      label: "Jetzt anfragen"
+      label: "Jetzt unverbindlich anfragen"
       link: "/kontakt"
 
-  - title: "Förderservice BAFA & KfW"
-    image: "/images/foerderung.png"
-    content: "Wir navigieren Sie durch jegliche Fördermöglichkeiten von BAFA oder KfW und sichern Ihnen die höchst mögliche Förderung für Ihr Projekt.
-            Zudem begleiten wir Ihr Projekt von der Planung über die Umsetzung bis zur Fertigstellung und Übergabe."
-    bulletpoints:
-      - "Kompetente Beratung & maximale Einsparung durch Bundes- und Landes-Förderprogramme"
-      - "Wir übernehmen die Bearbeitung Ihrer Förderanträge & Begleitung Ihres Vorhabens."
-      - "Umsetzung von Maßnahmen zur Verbesserung der Energieeffizienz."
-    button:
-      enable: false
-      label: "Jetzt anfragen"
-      link: "/kontakt"
-
-  - title: "Beratung zur Wärmepumpe"
+  - title: "Für Heizungsinstallateure "
     image: "/images/waermepumpe.png"
-    content: "Sparen Sie tausende von Euros durch unsere Beratung bei der Auswahl Ihrer Wärmepumpe."
+    content: "Erhöhen Sie Ihre Effizienz und Kundenzufriedenheit durch unseren Service Enklar.Therm."
     bulletpoints:
-      - "Maximale Ersparnis durch unabhängige Beratung."
-      - "Bis zu 70% Förderung bei Anschaffung einer Wärmepumpe erhalten."
-      - "Kostenfreie Beratung sichern."
+      - "Wir kümmern uns um den Förderantrag für Ihre Kunden, Sie konzentrieren sich auf das wesentliche."
+      - "Heizlastberechnung nach DIN EN 12831 für Heizungsauslegung & Förderantrag"
+      - "BzA-Erstellung innerhalb von 1-3 Werktagen"
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "Mehr Informationen"
+      link: "/therm"
 
   - title: "Portfolioanalyse"
     image: "/images/portfolio_analyse.png"
@@ -58,7 +56,7 @@ features:
       - "Prognose des Stranding-Risikos basierend auf CRREM."
       - "Klarheit, um die besten Entscheidungen für Ihren Bestand zu treffen."
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "Jetzt unverbindlich anfragen"
+      link: "/kontakt"
 ---
