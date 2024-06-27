@@ -13,7 +13,7 @@
   },
 
   "settings": {
-    "search": true,
+    "search": false,
     "sticky_header": true,
     "theme_switcher": false,
     "default_theme": "light",
@@ -30,9 +30,8 @@
 
   "navigation_button": {
     "enable": true,
-    "label": "Jetzt loslegen",
-    "link": "/kontakt",
-    "url": "/kontakt"
+    "label": "Zum Förderservice",
+    "link": "/foerderservice"
   },
 
   "disqus": {

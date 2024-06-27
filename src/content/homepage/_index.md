@@ -35,7 +35,7 @@ features:
       label: "Jetzt unverbindlich anfragen"
       link: "/kontakt"
 
-  - title: "Für Heizungsinstallateure "
+  - title: "Für Heizungsfirmen"
     image: "/images/waermepumpe.png"
     content: "Erhöhen Sie Ihre Effizienz und Kundenzufriedenheit durch unseren Service Enklar.Therm."
     bulletpoints:
