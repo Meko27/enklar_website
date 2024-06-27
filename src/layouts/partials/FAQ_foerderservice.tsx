@@ -37,11 +37,12 @@ const FAQ_foerderung: React.FC = () => {
         </Accordion>
 
         <Accordion title="Wofür brauche ich eine BzA?">
-        <p style={{ marginBottom: '16px' }}>Bei Mehrfamilienhäusern richtet sich die Höhe der förderfähigen Kosten wie folgt nach der Anzahl der Wohneinheiten:</p>
+        <p style={{ marginBottom: '16px' }}>Folgendes müssen Sie zur Bestätigung zum Antrag (BzA) wissen:</p>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginBottom: '16px' }}>
-            <li>30.000 Euro für die erste Wohneinheit.</li>
-            <li>Jeweils 15.000 Euro für die zweite bis sechste Wohneinheit.</li>
-            <li>Jeweils 8.000 Euro ab der siebten Wohneinheit.</li>
+            <li>Bei der BzA wird geprüft, ob Ihr Heizungstausch förderfähig ist und die Heizung korrekt dimensioniert wurde.</li>
+            <li>Zudem werden die förderfähigen Kosten in der BzA auf Basis des Angebots und Kostenabschätzung festgesetzt.</li>
+            <li>Stimmt alles erhalten Sie eine BzA-ID und das BzA Dokument für die Antragsstellung bei der KfW.</li>
+            <li>Unsere Energieeffizienz-Experten prüfen Ihr Vorhaben und erstellen Ihnen die vollständige BzA in nur 1-3 Werktagen.</li>
           </ul>
         </Accordion>
       </div>

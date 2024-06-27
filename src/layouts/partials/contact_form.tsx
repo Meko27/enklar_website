@@ -24,8 +24,10 @@ const ContactForm = () => {
             <input type="text" name="name" id="name" placeholder="Vor- und Nachname" required />
           </div>
           <div className="form-group">
-            
             <input type="email" name="email" id="email" placeholder="Email" required />
+          </div>
+          <div className="form-group">
+            <textarea rows={3} name="text" id="message" placeholder="Optionale Nachricht" />
           </div>
           <button type="submit" className="submit-button">Jetzt kostenlos anfragen</button>
         </form>

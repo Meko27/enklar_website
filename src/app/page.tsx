@@ -28,6 +28,7 @@ const GA_TRACKING_ID = 'G-THJP4GMD8G'
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
+  const callToActionData = getListPage("sections/call-to-action_home.md");
   const { frontmatter: advantages} = getListPage("sections/advantages.md")
   const { frontmatter } = homepage;
   const {
@@ -177,7 +178,8 @@ const Home = () => {
       ))}
 
       {/*<Testimonials data={testimonial} />*/}
-      {/*<CallToAction data={callToAction} />*/}
+      {/* CallToAction Sections */}
+       <CallToAction data={callToActionData} />
       
     </>
   );
